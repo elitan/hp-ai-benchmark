@@ -1,0 +1,20 @@
+{
+  "name": "hp-ai-benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite-node src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ai-sdk/openai": "^0.0.14",
+    "@types/node": "^20.12.12",
+    "ai": "^3.1.14",
+    "dotenv": "^16.4.5",
+    "vite-node": "^1.6.0",
+    "zod": "^3.23.8"
+  }
+}
