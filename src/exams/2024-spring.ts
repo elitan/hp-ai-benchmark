@@ -1392,6 +1392,102 @@ export function getExam2024Spring() {
       ],
       answer: "B",
     },
+
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/31-34.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+**Vilket svarsförslag beskriver bäst förhållandet mellan opererande, invärtesmedicinska och barnmedicinska specialiteter vad gäller det totala antalet specialistbevis 2012?**
+**Hur många minuter sammanlagt var de ankommande tågen försenade i Kommuner i glesbefolkad region?**
+- A. 5:3:1
+- B. 5:4:1
+- C. 6:4:1
+- D. 6:5:1
+`,
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/31-34.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Identifiera de tre specialiteterna inom invärtesmedicin med flest utfärdade specialistbevis 2011. Hur stor andel utgjorde dessa av det totala antalet specialistbevis inom invärtesmedicin samma år?
+
+- A. 55 procent
+- B. 65 procent
+- C. 75 procent
+- D. 85 procent
+`,
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/31-34.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Vilken opererande specialitet hade 2010 flest specialistbevis som hörde till personer som var 65 år eller äldre?
+- A. Kirurgi
+- B. Ortopedi
+- C. Anestesi och intensivvård
+- D. Obstetrik och gynekologi
+`,
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
   ];
 
   return exam;
