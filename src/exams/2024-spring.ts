@@ -15,7 +15,7 @@ Lös varje uppgift i två steg.
 Steg 1: Resonera för att svara korrekt
 Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
 
-const SYSTEM_PROMPT_READING_ABILITY = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska Ditt mål är att alltid svara korrekt för att få alla rätt.
+const SYSTEM_PROMPT_READING_COMPREHENSION = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska Ditt mål är att alltid svara korrekt för att få alla rätt.
 
 Lös varje uppgift i två steg.
 
@@ -31,7 +31,7 @@ Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
 
 const SYSTEM_PROMPT_MATH = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska Ditt mål är att alltid svara korrekt för att få alla rätt.
 
-För varje fråga, läs texten och välj sedan det bästa svaret från de tillgängliga alternativen. Lös varje uppgift i två steg.
+Lös varje uppgift i två steg.
 
 Steg 1: Resonera för att svara korrekt
 Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
@@ -317,7 +317,7 @@ export function getExam2024Spring() {
      * Reading ability #1
      */
     {
-      system: SYSTEM_PROMPT_READING_ABILITY,
+      system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
           role: "user",
@@ -337,7 +337,7 @@ export function getExam2024Spring() {
       answer: "B",
     },
     {
-      system: SYSTEM_PROMPT_READING_ABILITY,
+      system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
           role: "user",
@@ -363,7 +363,7 @@ export function getExam2024Spring() {
      * Reading ability #2
      */
     {
-      system: SYSTEM_PROMPT_READING_ABILITY,
+      system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
           role: "user",
@@ -384,7 +384,7 @@ export function getExam2024Spring() {
     },
 
     {
-      system: SYSTEM_PROMPT_READING_ABILITY,
+      system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
           role: "user",
@@ -405,7 +405,7 @@ export function getExam2024Spring() {
     },
 
     {
-      system: SYSTEM_PROMPT_READING_ABILITY,
+      system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
           role: "user",
@@ -426,7 +426,7 @@ export function getExam2024Spring() {
     },
 
     {
-      system: SYSTEM_PROMPT_READING_ABILITY,
+      system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
           role: "user",
@@ -452,7 +452,7 @@ export function getExam2024Spring() {
      * Reading ability #3
      */
     {
-      system: SYSTEM_PROMPT_READING_ABILITY,
+      system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
           role: "user",
@@ -472,7 +472,7 @@ export function getExam2024Spring() {
       answer: "C",
     },
     {
-      system: SYSTEM_PROMPT_READING_ABILITY,
+      system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
           role: "user",
@@ -492,7 +492,7 @@ export function getExam2024Spring() {
       answer: "B",
     },
     {
-      system: SYSTEM_PROMPT_READING_ABILITY,
+      system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
           role: "user",
@@ -512,7 +512,7 @@ export function getExam2024Spring() {
       answer: "A",
     },
     {
-      system: SYSTEM_PROMPT_READING_ABILITY,
+      system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
           role: "user",

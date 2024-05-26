@@ -1,1 +1,1 @@
-# ai-hp-benchmark
+# AI Högskoleprovet Benchmark
