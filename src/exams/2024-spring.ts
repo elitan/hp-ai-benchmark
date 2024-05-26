@@ -1,7 +1,7 @@
 import { CoreMessage } from "ai";
 
 interface Exam {
-  systemPrompt: string;
+  system: string;
   messages: CoreMessage[];
   answer: string;
 }
@@ -33,7 +33,7 @@ export function getExam2024Spring() {
      * Word comprehension
      */
     {
-      systemPrompt: SYSTEM_PROMPT_WORD_COMPREHENSION,
+      system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
           role: "user",
@@ -56,7 +56,7 @@ export function getExam2024Spring() {
      * Math
      */
     {
-      systemPrompt: SYSTEM_PROMPT_MATH,
+      system: SYSTEM_PROMPT_MATH,
       messages: [
         {
           role: "user",

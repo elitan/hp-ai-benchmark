@@ -16,7 +16,7 @@ async function main() {
     console.log("");
     console.log(task.messages);
 
-    const answer = await solve(task.systemPrompt, task.messages);
+    const answer = await solve(task.system, task.messages);
 
     if (answer === task.answer) {
       console.log(`Correct answer! ${answer}`);

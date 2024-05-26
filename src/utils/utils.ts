@@ -2,10 +2,10 @@ import { openai } from "@ai-sdk/openai";
 import { CoreMessage, generateObject, generateText } from "ai";
 import { z } from "zod";
 
-export async function solve(systemPrompt: string, messages: CoreMessage[]) {
+export async function solve(system: string, messages: CoreMessage[]) {
   const { text, ...rest } = await generateText({
     model: openai("gpt-4o"),
-    system: systemPrompt,
+    system,
     messages,
   });
 
