@@ -13,14 +13,21 @@ Välj rätt synonym från de angivna alternativen.
 Lös varje uppgift i två steg.
 
 Steg 1: Resonera för att svara korrekt
-Steg 2: Skriv ditt svar inklusive svarsalternativ (A, B, C, eller D).`;
+Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
 
 const SYSTEM_PROMPT_READING_ABILITY = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska Ditt mål är att alltid svara korrekt för att få alla rätt.
 
 Lös varje uppgift i två steg.
 
 Steg 1: Resonera för att svara korrekt
-Steg 2: Skriv ditt svar inklusive svarsalternativ (A, B, C, eller D).`;
+Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
+
+const SYSTEM_PROMPT_SENTENCE_COMPLETION = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska Ditt mål är att alltid svara korrekt för att få alla rätt.
+
+Lös varje uppgift i två steg.
+
+Steg 1: Resonera för att svara korrekt
+Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
 
 const SYSTEM_PROMPT_MATH = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska Ditt mål är att alltid svara korrekt för att få alla rätt.
 
@@ -129,7 +136,7 @@ Och det var vid Ledusjön hon bodde. I ett vitputsat hus med farstubro av järn.
 export function getExam2024Spring() {
   const exam: Exam[] = [
     /**
-     * test pass 1
+     * Test Pass 1
      *
      * Word comprehension
      */
@@ -305,7 +312,7 @@ export function getExam2024Spring() {
     },
 
     /**
-     * test pass 1
+     * Test Pass 1
      *
      * Reading ability #1
      */
@@ -351,7 +358,7 @@ export function getExam2024Spring() {
     },
 
     /**
-     * test pass 1
+     * Test Pass 1
      *
      * Reading ability #2
      */
@@ -440,7 +447,7 @@ export function getExam2024Spring() {
     },
 
     /**
-     * test pass 1
+     * Test Pass 1
      *
      * Reading ability #3
      */
@@ -526,7 +533,181 @@ export function getExam2024Spring() {
     },
 
     /**
-     * test pass 2
+     * Test Pass 1
+     *
+     * Sentence completion
+     */
+    {
+      system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
+      messages: [
+        {
+          role: "user",
+          content: `
+**Flera av berättelserna i Eva Adolfssons essäsamling Till skilda orter (1998) tycks vara självbiografiskt _____.**
+- A. engagerade
+- B. beroende
+- C. sammanhållna
+- D. förankrade
+`,
+        },
+      ],
+      answer: "D",
+    },
+
+    {
+      system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
+      messages: [
+        {
+          role: "user",
+          content: `
+**Det nya med detta sätt att ta fram en översiktsplan är att innehållet ska vara baserat på uppdaterade och relevanta _____. Dessutom fungerar planen som ett verktyg för att _____ de lokala aktörerna, och därmed fånga upp medborgarperspektivet.**
+- A. kartor - moderera
+- B. fakta - reglera
+- C. data - involvera
+- D. studier - exkludera
+`,
+        },
+      ],
+      answer: "C",
+    },
+
+    {
+      system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
+      messages: [
+        {
+          role: "user",
+          content: `
+**Förslaget till _____ av den gamla trädgården utgick från de rådande förutsättningarna, och _____ de möjligheter till _____ och bevarande som ändå fanns.**
+- A. odling - bortsåg från - gårdsförsäljning
+- B. restaurering - tog fasta på - återställande
+- C. uthyrning - gav näring åt - arbetstillfällen
+- D. skötsel - fann tröst i - nyskapande
+`,
+        },
+      ],
+      answer: "B",
+    },
+
+    {
+      system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
+      messages: [
+        {
+          role: "user",
+          content: `
+**Hur en röst _____ rent akustiskt beror på en mängd olika faktorer. Därför är det svårt att hitta allmängiltiga och objektiva _____ för röststatus som skulle kunna användas kliniskt och pedagogiskt.**
+- A. ter sig - kriterier
+- B. gör sig - valörer
+- C. står sig - nyanser
+- D. rör sig - normer
+`,
+        },
+      ],
+      answer: "A",
+    },
+    {
+      system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
+      messages: [
+        {
+          role: "user",
+          content: `
+**1842 års folkskolestadga medförde att nästan alla svenska barn lärde sig läsa, skriva och räkna, vilket var _____ i modernitetsbygget.**
+- A. omvittnat
+- B. bristfälligt
+- C. ovärderligt
+- D. framställt
+`,
+        },
+      ],
+      answer: "C",
+    },
+
+    {
+      system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
+      messages: [
+        {
+          role: "user",
+          content: `
+**Innan resan kunde _____ måste segelfartyget Endeavour föras till den nederländska kolonin Batavia för en reparation som tog två månader _____.**
+- A. utformas - i beslag
+- B. återupptas - i anspråk
+- C. genomdrivas - i retur
+- D. avhandlas - i beredskap
+`,
+        },
+      ],
+      answer: "B",
+    },
+
+    {
+      system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
+      messages: [
+        {
+          role: "user",
+          content: `
+**Lewi Pethrus fungerade som representant för Pingströrelsen, och hans fysiska närvaro blev ett tecken på att den nya församlingen tillhörde rörelsen. Pethrus symboliska kapital var med andra ord så starkt att han personligen _____ Pingströrelsen.**
+- A. besjälade
+- B. frammanade
+- C. ledsagade
+- D. förkroppsligade
+`,
+        },
+      ],
+      answer: "D",
+    },
+
+    {
+      system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
+      messages: [
+        {
+          role: "user",
+          content: `
+**Varje språk uttrycker en egen _____. Det ger inte en avbildning punkt för punkt av den utomspråkliga verkligheten, utan lägger ett _____ över verkligheten, vilken alltså inte avbildas, utan _____.**
+- A. tidsanda - lager - förvrängs
+- B. världsbild - raster - tolkas
+- C. livsstil - filter - beskrivs
+- D. synvinkel - mönster - nyanseras
+`,
+        },
+      ],
+      answer: "B",
+    },
+
+    {
+      system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
+      messages: [
+        {
+          role: "user",
+          content: `
+**Allt som du och jag vet är inte _____ i den meningen att vi kan formulera vad vi vet. Mycket av vår vardagskunskap är _____ eller så kallad tyst kunskap.**
+- A. aktuellt - inaktuell
+- B. aktivt - retroaktiv
+- C. explicit - implicit
+- D. ordinärt - extraordinär
+`,
+        },
+      ],
+      answer: "C",
+    },
+
+    {
+      system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
+      messages: [
+        {
+          role: "user",
+          content: `
+**Åklagarens besked var oväntat och ledde till spontant jubel hos många Baltimore-bor, som _____ hade väntat sig ännu ett frikännande av våldsamma poliser.**
+- A. luttrat
+- B. kaxigt
+- C. prompt
+- D. ivrigt
+`,
+        },
+      ],
+      answer: "A",
+    },
+
+    /**
+     * Test Pass 2
      *
      * Math
      */
