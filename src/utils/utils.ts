@@ -2,7 +2,14 @@ import { openai } from "@ai-sdk/openai";
 import { CoreMessage, generateObject, generateText } from "ai";
 import { z } from "zod";
 
-export async function solve(system: string, messages: CoreMessage[]) {
+interface SolveProps {
+  system: string;
+  messages: CoreMessage[];
+}
+
+export async function solve(props: SolveProps) {
+  const { system, messages } = props;
+
   const { text, ...rest } = await generateText({
     model: openai("gpt-4o"),
     system,
@@ -17,5 +24,9 @@ export async function solve(system: string, messages: CoreMessage[]) {
     prompt: `LÖSNING: ${text}\n\nFRÅGA:\nVilket svar (A, B, C, eller D) är angivet?`,
   });
 
-  return object.answer;
+  return {
+    text,
+    answer: object.answer,
+    ...rest,
+  };
 }

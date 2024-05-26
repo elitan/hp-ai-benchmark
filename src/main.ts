@@ -12,13 +12,21 @@ async function main() {
 
   let question = 1;
   let correctAnswers = 0;
+  let tokensUsed = 0;
 
-  for (const task of tasks) {
+  for (const task of tasks.slice(30, 40)) {
     console.log("");
     console.log(`Question ${question}:`);
     console.log(task.messages);
 
-    const answer = await solve(task.system, task.messages);
+    const { system, messages } = task;
+    const {
+      answer,
+      text,
+      usage: { totalTokens },
+    } = await solve({ system, messages });
+
+    console.log(text);
 
     if (answer === task.answer) {
       console.log(`Correct answer! ${answer}`);
@@ -27,11 +35,13 @@ async function main() {
       console.log(`Wrong answer! Expected: ${task.answer}, got: ${answer}`);
     }
 
+    tokensUsed += totalTokens;
     question++;
   }
 
   console.log("");
   console.log(`Correct answers: ${correctAnswers}/${tasks.length}`);
+  console.log(`Total tokens used: ${tokensUsed}`);
 }
 
 main();

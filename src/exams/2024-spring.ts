@@ -732,6 +732,237 @@ export function getExam2024Spring() {
       ],
       answer: "B",
     },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/2.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "D",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/3.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "D",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/4.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/5.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/6.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/7.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/8.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "D",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/9.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/10.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/2.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "D",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/2.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "D",
+    },
   ];
 
   return exam;
