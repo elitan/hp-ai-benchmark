@@ -1323,10 +1323,6 @@ export function getExam2024Spring() {
 - D. Varuproducerande kommuner och Kommuner i tätbefolkad region
 `,
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
@@ -1353,10 +1349,6 @@ export function getExam2024Spring() {
 - C. Dubbelt så många
 - D. Tre gånger så många
 `,
-        },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
         },
       ],
       answer: "C",
@@ -1385,10 +1377,6 @@ export function getExam2024Spring() {
 - D. 550000 minuter
 `,
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
@@ -1410,17 +1398,13 @@ export function getExam2024Spring() {
         {
           role: "user",
           content: `
-**Vilket svarsförslag beskriver bäst förhållandet mellan opererande, invärtesmedicinska och barnmedicinska specialiteter vad gäller det totala antalet specialistbevis 2012?**
-**Hur många minuter sammanlagt var de ankommande tågen försenade i Kommuner i glesbefolkad region?**
+Vilket svarsförslag beskriver bäst förhållandet mellan opererande, invärtesmedicinska och barnmedicinska specialiteter vad gäller det totala antalet specialistbevis 2012?
+
 - A. 5:3:1
 - B. 5:4:1
 - C. 6:4:1
 - D. 6:5:1
 `,
-        },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
         },
       ],
       answer: "B",
@@ -1450,10 +1434,6 @@ Identifiera de tre specialiteterna inom invärtesmedicin med flest utfärdade sp
 - D. 85 procent
 `,
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
@@ -1481,12 +1461,178 @@ Vilken opererande specialitet hade 2010 flest specialistbevis som hörde till pe
 - D. Obstetrik och gynekologi
 `,
         },
+      ],
+      answer: "A",
+    },
+
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
         {
           role: "user",
-          content: "Lös denna uppgiften.",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Hur stort var antalet personer som flyttade inom Västerort jämfört med antalet som flyttade från Söderort till Västerort?
+
+- A. Fyra gånger så stort
+- B. Fem gånger så stort
+- C. Sex gånger så stort
+- D. Sju gånger så stort
+`,
+        },
+      ],
+      answer: "C",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Hur många fler flyttade inom Stockholms kommun än till Stockholms kommun?
+
+- A. 34927
+- B. 35619
+- C. 37247
+- D. 42074
+`,
         },
       ],
       answer: "A",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Vad blir flyttnettot om man räknar antalet personer som flyttade till Söderort och tar bort antalet som flyttade från Söderort?
+
+- A. -2168
+- B. -967
+- C. +1561
+- D. +2528
+`,
+        },
+      ],
+      answer: "D",
+    },
+
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Studera de olika djurslagen med avseende på hur stor andel av den totala slakten som utgjordes av ekologiskt uppfödda djur. Hur stor var den största noterade ökningen av denna andel om man jämför 2009 och 2015?
+
+- A. 5 procentenheter
+- B. 8 procentenheter
+- C. 55 procentenheter
+- D. 75 procentenheter
+`,
+        },
+      ],
+      answer: "B",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Hur stor andel av slakten av de redovisade ekologiskt uppfödda djurslagen 2014 utgjorde slakten av svin?
+
+- A. 1/6
+- B. 1/4
+- C. 1/3
+- D. 2/5
+`,
+        },
+      ],
+      answer: "A",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den totala slakten av får och lamm. Hur stor var den totala slakten av får och lamm 2012?
+
+- A. 1000 ton
+- B. 2000 ton
+- C. 4000 ton
+- D. 5000 ton
+`,
+        },
+      ],
+      answer: "D",
     },
   ];
 
