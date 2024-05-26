@@ -1402,7 +1402,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/31-34.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png"
               ),
             },
           ],
@@ -1434,7 +1434,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/31-34.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png"
               ),
             },
           ],
@@ -1466,7 +1466,7 @@ Identifiera de tre specialiteterna inom invärtesmedicin med flest utfärdade sp
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/31-34.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png"
               ),
             },
           ],
