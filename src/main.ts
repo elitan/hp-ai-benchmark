@@ -14,7 +14,7 @@ async function main() {
   let correctAnswers = 0;
   let tokensUsed = 0;
 
-  for (const task of tasks.slice(30, 40)) {
+  for (const task of tasks.slice(-3)) {
     console.log("");
     console.log(`Question ${question}:`);
     console.log(task.messages);

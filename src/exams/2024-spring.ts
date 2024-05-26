@@ -930,7 +930,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/2.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/11.png"
               ),
             },
           ],
@@ -951,7 +951,91 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/2.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/12.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/13.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/14.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/15.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/16.png"
               ),
             },
           ],
@@ -962,6 +1046,351 @@ export function getExam2024Spring() {
         },
       ],
       answer: "D",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/17.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/18.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "D",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/19.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/20.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/21.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/22.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/23.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "E",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/24.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/25.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "E",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/26.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "D",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/27.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/28.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+**Vilket av svarsförslagen anger de två kommungrupper som var mest lika varandra vad gäller antal tågankomster och genomsnittlig försening?**
+- A. Storstäder och Kommuner i tätbefolkad region
+- B. Förortskommuner till storstäder och Pendlingskommuner
+- C. Pendlingskommuner och Varuproducerande kommuner
+- D. Varuproducerande kommuner och Kommuner i tätbefolkad region
+`,
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+**Hur många tågankomster finns redovisade för Förortskommuner till storstäder jämfört med Förortskommuner till större städer?**
+- A. Hälften så många
+- B. Lika många
+- C. Dubbelt så många
+- D. Tre gånger så många
+`,
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+**Hur många minuter sammanlagt var de ankommande tågen försenade i Kommuner i glesbefolkad region?**
+- A. 220000 minuter
+- B. 330000 minuter
+- C. 440000 minuter
+- D. 550000 minuter
+`,
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
     },
   ];
 
