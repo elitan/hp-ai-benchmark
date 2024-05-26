@@ -10,10 +10,12 @@ export interface Message {
 async function main() {
   const tasks = getExam2024Spring();
 
+  let question = 1;
   let correctAnswers = 0;
 
   for (const task of tasks) {
     console.log("");
+    console.log(`Question ${question}:`);
     console.log(task.messages);
 
     const answer = await solve(task.system, task.messages);
@@ -24,6 +26,8 @@ async function main() {
     } else {
       console.log(`Wrong answer! Expected: ${task.answer}, got: ${answer}`);
     }
+
+    question++;
   }
 
   console.log("");
