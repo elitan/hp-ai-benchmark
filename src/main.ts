@@ -1,6 +1,6 @@
 import "dotenv/config";
+import { getExam2024Spring } from "./exams/2024-spring";
 import { solve } from "./utils/utils";
-import { CoreMessage } from "ai";
 
 export interface Message {
   role: "user" | "assistant";
@@ -8,37 +8,26 @@ export interface Message {
 }
 
 async function main() {
-  const problemImages = [
-    "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2-kvant/1.png",
-    "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2-kvant/2.png",
-    "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2-kvant/3.png",
-  ];
+  const tasks = getExam2024Spring();
 
-  for (const problemImage of problemImages) {
-    const messages: CoreMessage[] = [
-      {
-        role: "user",
-        content: [
-          {
-            type: "image",
-            image: new URL(problemImage),
-          },
-        ],
-      },
-      {
-        role: "user",
-        content: "Lös denna uppgiften.",
-      },
-    ];
+  let correctAnswers = 0;
 
-    const r = await solve(messages);
-
+  for (const task of tasks) {
     console.log("");
+    console.log(task.messages);
 
-    console.log(`Problem: ${problemImage}`);
-    console.log("ANSWER:");
-    console.log(r);
+    const answer = await solve(task.systemPrompt, task.messages);
+
+    if (answer === task.answer) {
+      console.log(`Correct answer! ${answer}`);
+      correctAnswers++;
+    } else {
+      console.log(`Wrong answer! Expected: ${task.answer}, got: ${answer}`);
+    }
   }
+
+  console.log("");
+  console.log(`Correct answers: ${correctAnswers}/${tasks.length}`);
 }
 
 main();
