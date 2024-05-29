@@ -1,5 +1,5 @@
 import { openai } from "@ai-sdk/openai";
-import { CoreMessage, generateObject, generateText } from "ai";
+import { CoreMessage, generateObject, generateText, streamText } from "ai";
 import { z } from "zod";
 
 interface SolveProps {
@@ -28,5 +28,35 @@ export async function solve(props: SolveProps) {
     text,
     answer: object.answer,
     ...rest,
+  };
+}
+
+export async function solveStream(props: SolveProps) {
+  const { system, messages } = props;
+
+  const result = await streamText({
+    model: openai("gpt-4o"),
+    system,
+    messages,
+  });
+
+  let completeText = "";
+
+  for await (const textPart of result.textStream) {
+    process.stdout.write(textPart);
+    completeText += textPart;
+  }
+
+  const { object, ...rest2 } = await generateObject({
+    model: openai("gpt-3.5-turbo"),
+    schema: z.object({
+      answer: z.enum(["A", "B", "C", "D", "E"]),
+    }),
+    prompt: `LÖSNING: ${completeText}\n\nFRÅGA:\nVilket svar (A, B, C, eller D) är angivet?`,
+  });
+
+  return {
+    text: completeText,
+    answer: object.answer,
   };
 }

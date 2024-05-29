@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { getExam2024Spring } from "./exams/2024-spring";
-import { solve } from "./utils/utils";
+import { solveStream } from "./utils/utils";
 
 export interface Message {
   role: "user" | "assistant";
@@ -14,7 +14,7 @@ async function main() {
   let correctAnswers = 0;
   let tokensUsed = 0;
 
-  for (const task of tasks) {
+  for (const task of tasks.slice(0, 3)) {
     console.log("");
     console.log(`Question ${question}:`);
     console.log(task.messages);
@@ -23,8 +23,8 @@ async function main() {
     const {
       answer,
       text,
-      usage: { totalTokens },
-    } = await solve({ system, messages });
+      // usage: { totalTokens },
+    } = await solveStream({ system, messages });
 
     console.log(text);
 
@@ -35,13 +35,13 @@ async function main() {
       console.log(`Wrong answer! Expected: ${task.answer}, got: ${answer}`);
     }
 
-    tokensUsed += totalTokens;
+    // tokensUsed += totalTokens;
     question++;
   }
 
   console.log("");
   console.log(`Correct answers: ${correctAnswers}/${tasks.length}`);
-  console.log(`Total tokens used: ${tokensUsed}`);
+  // console.log(`Total tokens used: ${tokensUsed}`);
 }
 
 main();

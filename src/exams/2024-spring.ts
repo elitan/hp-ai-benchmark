@@ -1,6 +1,6 @@
 import { CoreMessage } from "ai";
 
-/
+/**
  * https://www.studera.nu/hogskoleprov/fpn/provfragor-och-facit-varen-2024/
  */
 
@@ -42,7 +42,7 @@ Lös varje uppgift i två steg.
 Steg 1: Resonera för att svara korrekt
 Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
 
-/
+/**
  * asd
  */
 
@@ -139,7 +139,7 @@ Och det var vid Ledusjön hon bodde. I ett vitputsat hus med farstubro av järn.
 const readingAbilityText4 = `
 ## Erinran till redovisningskonsult
 
-Referat av disciplinämndens ärende med dnr 2/2011, beslut meddelat 23 maj 2011.
+**Referat av disciplinämndens ärende med dnr 2/2011, beslut meddelat 23 maj 2011.**
 
 NN är ensam styrelseledamot i ett bolag som bedriver redovisningsverksamhet. NN är medlem i FAR och auktoriserad redovisningskonsult.
 
@@ -206,7 +206,7 @@ Maria Ågren`;
 
 export function getExam2024Spring() {
   const exam: Exam[] = [
-    /
+    /**
      * Test Pass 1
      *
      * Word comprehension
@@ -219,7 +219,7 @@ export function getExam2024Spring() {
         {
           role: "user",
           content: `
-dispyt
+**dispyt**
 - A. brist
 - B. gräl
 - C. tvekan
@@ -238,7 +238,7 @@ dispyt
         {
           role: "user",
           content: `
-angeläget
+**angeläget**
 - A. tydligt
 - B. utmanande
 - C. informativt
@@ -257,7 +257,7 @@ angeläget
         {
           role: "user",
           content: `
-supplement
+**supplement**
 - A. överskott
 - B. urval
 - C. innehåll
@@ -276,7 +276,7 @@ supplement
         {
           role: "user",
           content: `
-aktad
+**aktad**
 - A. respekterad
 - B. högtidlig
 - C. artig
@@ -295,7 +295,7 @@ aktad
         {
           role: "user",
           content: `
-rata
+**rata**
 - A. granska
 - B. avvisa
 - C. fastställa
@@ -314,7 +314,7 @@ rata
         {
           role: "user",
           content: `
-illa åtgången
+**illa åtgången**
 - A. helt uttorkad
 - B. nästan slut
 - C. mycket ledsen
@@ -333,7 +333,7 @@ illa åtgången
         {
           role: "user",
           content: `
-bärkraft
+**bärkraft**
 - A. avlagring
 - B. prestation
 - C. tryck
@@ -352,7 +352,7 @@ bärkraft
         {
           role: "user",
           content: `
-vegetera
+**vegetera**
 - A. tala gåtfullt
 - B. vara generös
 - C. leva i overksamhet
@@ -371,7 +371,7 @@ vegetera
         {
           role: "user",
           content: `
-egalitär
+**egalitär**
 - A. jämlik
 - B. tillfällig
 - C. obekymrad
@@ -390,7 +390,7 @@ egalitär
         {
           role: "user",
           content: `
-kavalkad
+**kavalkad**
 - A. kort historia
 - B. utvald grupp
 - C. lång rad
@@ -402,7 +402,7 @@ kavalkad
       answer: "C",
     },
 
-    /
+    /**
      * Test Pass 1
      *
      * Reading ability #1
@@ -419,7 +419,7 @@ kavalkad
         {
           role: "user",
           content: `
-Vad av följande är vesiklar ett exempel på, om man följer textens resonemang?
+**Vad av följande är vesiklar ett exempel på, om man följer textens resonemang?**
 - A. Att ett kroppsligt förlopp kan rubbas utan egentlig orsak.
 - B. Att cellerna kan använda en och samma process för olika syften.
 - C. Att kroppsegna ämnen kan bromsa en pågående sjukdomsprocess.
@@ -441,7 +441,7 @@ Vad av följande är vesiklar ett exempel på, om man följer textens resonemang
         {
           role: "user",
           content: `
-Vad skulle kunna bli användbart vid behandling av vaskulit, enligt Maria Mossbergs forskningsresultat?
+**Vad skulle kunna bli användbart vid behandling av vaskulit, enligt Maria Mossbergs forskningsresultat?**
 - A. Ökad aktivitetsgrad hos vesiklar.
 - B. Speciellt odlad blodplasma.
 - C. Redan tillgängliga mediciner.
@@ -452,7 +452,7 @@ Vad skulle kunna bli användbart vid behandling av vaskulit, enligt Maria Mossbe
       answer: "C",
     },
 
-    /
+    /**
      * Test Pass 1
      *
      * Reading ability #2
@@ -469,7 +469,7 @@ Vad skulle kunna bli användbart vid behandling av vaskulit, enligt Maria Mossbe
         {
           role: "user",
           content: `
-Vad påpekar textförfattarna om de hänsynsytor som av naturvårdsskäl undantas från avverkning?
+**Vad påpekar textförfattarna om de hänsynsytor som av naturvårdsskäl undantas från avverkning?**
 - A. De är alltför olika och inte tillräckligt artrika.
 - B. De är inte unika nog att klassas som nyckelbiotoper.
 - C. De är inte placerade där hotet mot skogen är som störst.
@@ -492,7 +492,7 @@ Vad påpekar textförfattarna om de hänsynsytor som av naturvårdsskäl undanta
         {
           role: "user",
           content: `
-Vad kritiserar textförfattarna när det gäller ”den svenska skogsbruksmodellen”?
+**Vad kritiserar textförfattarna när det gäller ”den svenska skogsbruksmodellen”?**
 - A. Att modellen har en otydlig målsättning.
 - B. Att det råder obalans mellan skogsnäringens och naturvårdens intressen.
 - C. Att modellen bygger på otidsenlig forskning.
@@ -515,7 +515,7 @@ Vad kritiserar textförfattarna när det gäller ”den svenska skogsbruksmodell
         {
           role: "user",
           content: `
-Textförfattarna anser att den svenska skogen inte brukas på ett hållbart sätt i dag. Vad uppfattar de som det huvudsakliga problemet?
+**Textförfattarna anser att den svenska skogen inte brukas på ett hållbart sätt i dag. Vad uppfattar de som det huvudsakliga problemet?**
 - A. Produktionstakten, som ständigt minskar den totala skogsarealen i Sverige.
 - B. Skogsindustrins utsläpp, som sprider farliga ämnen i ett ömtåligt landskap.
 - C. Sättet att avverka, vilket allvarligt skadar den biologiska mångfalden i skogen.
@@ -538,7 +538,7 @@ Textförfattarna anser att den svenska skogen inte brukas på ett hållbart sät
         {
           role: "user",
           content: `
-Vilken av följande förändringar av det svenska skogsbruket efterlyser textförfattarna?
+**Vilken av följande förändringar av det svenska skogsbruket efterlyser textförfattarna?**
 - A. Att EU:s naturvårdsdirektiv anpassas till svenska förhållanden.
 - B. Att forskningen inriktas på att utveckla alternativ till skogsråvara.
 - C. Att den produktiva skogsmarken utökas och blir mer enhetlig.
@@ -549,7 +549,7 @@ Vilken av följande förändringar av det svenska skogsbruket efterlyser textfö
       answer: "D",
     },
 
-    /
+    /**
      * Test Pass 1
      *
      * Reading ability #3
@@ -566,7 +566,7 @@ Vilken av följande förändringar av det svenska skogsbruket efterlyser textfö
         {
           role: "user",
           content: `
-Hur förhåller sig Tommy till sin morfar, att döma av hans tankar under begravningen?
+**Hur förhåller sig Tommy till sin morfar, att döma av hans tankar under begravningen?**
 - A. Han dömer morfadern för dennes livsval och begravningen väcker hans ilska.
 - B. Han är ointresserad av morfadern och drömmer sig bort under begravningen.
 - C. Han tänker på sin morfar och känner att begravningen inte gör honom rättvisa.
@@ -588,7 +588,7 @@ Hur förhåller sig Tommy till sin morfar, att döma av hans tankar under begrav
         {
           role: "user",
           content: `
-Vilket svarsförslag överensstämmer bäst med hur Tommy uppfattar sin mor?
+**Vilket svarsförslag överensstämmer bäst med hur Tommy uppfattar sin mor?**
 - A. Hon är svartsjuk och tänker mest på sig själv.
 - B. Hon är dominant och noga med detaljerna.
 - C. Hon är självuppoffrande och döljer sina egna behov.
@@ -610,7 +610,7 @@ Vilket svarsförslag överensstämmer bäst med hur Tommy uppfattar sin mor?
         {
           role: "user",
           content: `
-Vilken mening sammanfattar begravningen bäst, om man utgår från textens beskrivning?
+**Vilken mening sammanfattar begravningen bäst, om man utgår från textens beskrivning?**
 - A. Det är en enkel ceremoni med endast närmast sörjande och en opersonlig präst.
 - B. Det är en högtidlig begravning med uppklädda besökare och en värdig präst.
 - C. Det är en stillsam ceremoni utan musik med en kortfattad präst.
@@ -632,7 +632,7 @@ Vilken mening sammanfattar begravningen bäst, om man utgår från textens beskr
         {
           role: "user",
           content: `
-Vilken är den rimligaste tolkningen av Tommys tankar och beteenden efter begravningsceremonins slut?
+**Vilken är den rimligaste tolkningen av Tommys tankar och beteenden efter begravningsceremonins slut?**
 - A. Att han är nyfiken på Gun.
 - B. Att han struntar i Gun.
 - C. Att han tycker synd om Gun.
@@ -643,7 +643,7 @@ Vilken är den rimligaste tolkningen av Tommys tankar och beteenden efter begrav
       answer: "A",
     },
 
-    /
+    /**
      * Test Pass 1
      *
      * Sentence completion
@@ -656,7 +656,7 @@ Vilken är den rimligaste tolkningen av Tommys tankar och beteenden efter begrav
         {
           role: "user",
           content: `
-Flera av berättelserna i Eva Adolfssons essäsamling Till skilda orter (1998) tycks vara självbiografiskt _____.
+**Flera av berättelserna i Eva Adolfssons essäsamling Till skilda orter (1998) tycks vara självbiografiskt _____.**
 - A. engagerade
 - B. beroende
 - C. sammanhållna
@@ -675,7 +675,7 @@ Flera av berättelserna i Eva Adolfssons essäsamling Till skilda orter (1998) t
         {
           role: "user",
           content: `
-Det nya med detta sätt att ta fram en översiktsplan är att innehållet ska vara baserat på uppdaterade och relevanta _____. Dessutom fungerar planen som ett verktyg för att _____ de lokala aktörerna, och därmed fånga upp medborgarperspektivet.
+**Det nya med detta sätt att ta fram en översiktsplan är att innehållet ska vara baserat på uppdaterade och relevanta _____. Dessutom fungerar planen som ett verktyg för att _____ de lokala aktörerna, och därmed fånga upp medborgarperspektivet.**
 - A. kartor - moderera
 - B. fakta - reglera
 - C. data - involvera
@@ -694,7 +694,7 @@ Det nya med detta sätt att ta fram en översiktsplan är att innehållet ska va
         {
           role: "user",
           content: `
-Förslaget till _____ av den gamla trädgården utgick från de rådande förutsättningarna, och _____ de möjligheter till _____ och bevarande som ändå fanns.
+**Förslaget till _____ av den gamla trädgården utgick från de rådande förutsättningarna, och _____ de möjligheter till _____ och bevarande som ändå fanns.**
 - A. odling - bortsåg från - gårdsförsäljning
 - B. restaurering - tog fasta på - återställande
 - C. uthyrning - gav näring åt - arbetstillfällen
@@ -712,7 +712,7 @@ Förslaget till _____ av den gamla trädgården utgick från de rådande föruts
         {
           role: "user",
           content: `
-Hur en röst _____ rent akustiskt beror på en mängd olika faktorer. Därför är det svårt att hitta allmängiltiga och objektiva _____ för röststatus som skulle kunna användas kliniskt och pedagogiskt.
+**Hur en röst _____ rent akustiskt beror på en mängd olika faktorer. Därför är det svårt att hitta allmängiltiga och objektiva _____ för röststatus som skulle kunna användas kliniskt och pedagogiskt.**
 - A. ter sig - kriterier
 - B. gör sig - valörer
 - C. står sig - nyanser
@@ -730,7 +730,7 @@ Hur en röst _____ rent akustiskt beror på en mängd olika faktorer. Därför �
         {
           role: "user",
           content: `
-1842 års folkskolestadga medförde att nästan alla svenska barn lärde sig läsa, skriva och räkna, vilket var _____ i modernitetsbygget.
+**1842 års folkskolestadga medförde att nästan alla svenska barn lärde sig läsa, skriva och räkna, vilket var _____ i modernitetsbygget.**
 - A. omvittnat
 - B. bristfälligt
 - C. ovärderligt
@@ -748,7 +748,7 @@ Hur en röst _____ rent akustiskt beror på en mängd olika faktorer. Därför �
         {
           role: "user",
           content: `
-Innan resan kunde _____ måste segelfartyget Endeavour föras till den nederländska kolonin Batavia för en reparation som tog två månader _____.
+**Innan resan kunde _____ måste segelfartyget Endeavour föras till den nederländska kolonin Batavia för en reparation som tog två månader _____.**
 - A. utformas - i beslag
 - B. återupptas - i anspråk
 - C. genomdrivas - i retur
@@ -766,7 +766,7 @@ Innan resan kunde _____ måste segelfartyget Endeavour föras till den nederlän
         {
           role: "user",
           content: `
-Lewi Pethrus fungerade som representant för Pingströrelsen, och hans fysiska närvaro blev ett tecken på att den nya församlingen tillhörde rörelsen. Pethrus symboliska kapital var med andra ord så starkt att han personligen _____ Pingströrelsen.
+**Lewi Pethrus fungerade som representant för Pingströrelsen, och hans fysiska närvaro blev ett tecken på att den nya församlingen tillhörde rörelsen. Pethrus symboliska kapital var med andra ord så starkt att han personligen _____ Pingströrelsen.**
 - A. besjälade
 - B. frammanade
 - C. ledsagade
@@ -784,7 +784,7 @@ Lewi Pethrus fungerade som representant för Pingströrelsen, och hans fysiska n
         {
           role: "user",
           content: `
-Varje språk uttrycker en egen _____. Det ger inte en avbildning punkt för punkt av den utomspråkliga verkligheten, utan lägger ett _____ över verkligheten, vilken alltså inte avbildas, utan _____.
+**Varje språk uttrycker en egen _____. Det ger inte en avbildning punkt för punkt av den utomspråkliga verkligheten, utan lägger ett _____ över verkligheten, vilken alltså inte avbildas, utan _____.**
 - A. tidsanda - lager - förvrängs
 - B. världsbild - raster - tolkas
 - C. livsstil - filter - beskrivs
@@ -802,7 +802,7 @@ Varje språk uttrycker en egen _____. Det ger inte en avbildning punkt för punk
         {
           role: "user",
           content: `
-Allt som du och jag vet är inte _____ i den meningen att vi kan formulera vad vi vet. Mycket av vår vardagskunskap är _____ eller så kallad tyst kunskap.
+**Allt som du och jag vet är inte _____ i den meningen att vi kan formulera vad vi vet. Mycket av vår vardagskunskap är _____ eller så kallad tyst kunskap.**
 - A. aktuellt - inaktuell
 - B. aktivt - retroaktiv
 - C. explicit - implicit
@@ -820,7 +820,7 @@ Allt som du och jag vet är inte _____ i den meningen att vi kan formulera vad v
         {
           role: "user",
           content: `
-Åklagarens besked var oväntat och ledde till spontant jubel hos många Baltimore-bor, som _____ hade väntat sig ännu ett frikännande av våldsamma poliser.
+**Åklagarens besked var oväntat och ledde till spontant jubel hos många Baltimore-bor, som _____ hade väntat sig ännu ett frikännande av våldsamma poliser.**
 - A. luttrat
 - B. kaxigt
 - C. prompt
@@ -831,7 +831,7 @@ Allt som du och jag vet är inte _____ i den meningen att vi kan formulera vad v
       answer: "A",
     },
 
-    /
+    /**
      * Test Pass 2
      *
      * Math
@@ -1499,7 +1499,7 @@ Allt som du och jag vet är inte _____ i den meningen att vi kan formulera vad v
         {
           role: "user",
           content: `
-Vilket av svarsförslagen anger de två kommungrupper som var mest lika varandra vad gäller antal tågankomster och genomsnittlig försening?
+**Vilket av svarsförslagen anger de två kommungrupper som var mest lika varandra vad gäller antal tågankomster och genomsnittlig försening?**
 - A. Storstäder och Kommuner i tätbefolkad region
 - B. Förortskommuner till storstäder och Pendlingskommuner
 - C. Pendlingskommuner och Varuproducerande kommuner
@@ -1528,7 +1528,7 @@ Vilket av svarsförslagen anger de två kommungrupper som var mest lika varandra
         {
           role: "user",
           content: `
-Hur många tågankomster finns redovisade för Förortskommuner till storstäder jämfört med Förortskommuner till större städer?
+**Hur många tågankomster finns redovisade för Förortskommuner till storstäder jämfört med Förortskommuner till större städer?**
 - A. Hälften så många
 - B. Lika många
 - C. Dubbelt så många
@@ -1557,7 +1557,7 @@ Hur många tågankomster finns redovisade för Förortskommuner till storstäder
         {
           role: "user",
           content: `
-Hur många minuter sammanlagt var de ankommande tågen försenade i Kommuner i glesbefolkad region?
+**Hur många minuter sammanlagt var de ankommande tågen försenade i Kommuner i glesbefolkad region?**
 - A. 220000 minuter
 - B. 330000 minuter
 - C. 440000 minuter
@@ -1839,7 +1839,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
       ],
       answer: "D",
     },
-    /
+    /**
      * Test Pass 4
      *
      * test pass 3 was skipped
@@ -1855,7 +1855,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
         {
           role: "user",
           content: `
-försegla
+**försegla**
 - A. upphöra
 - B. tillsluta
 - C. undersöka
@@ -1874,7 +1874,7 @@ försegla
         {
           role: "user",
           content: `
-autodidakt
+**autodidakt**
 - A. pålitlig person
 - B. mäktig person
 - C. egoistisk person
@@ -1893,7 +1893,7 @@ autodidakt
         {
           role: "user",
           content: `
-gentemot
+**gentemot**
 - A. nära intill
 - B. bortsett från
 - C. som alternativ till
@@ -1912,7 +1912,7 @@ gentemot
         {
           role: "user",
           content: `
-utarmad
+**utarmad**
 - A. fri
 - B. farlig
 - C. förlamad
@@ -1931,7 +1931,7 @@ utarmad
         {
           role: "user",
           content: `
-axplock
+**axplock**
 - A. slumpartat urval
 - B. enformigt arbete
 - C. förstahandsval
@@ -1950,7 +1950,7 @@ axplock
         {
           role: "user",
           content: `
-exceptionell
+**exceptionell**
 - A. nyanserad
 - B. högtidlig
 - C. sällsynt
@@ -1969,7 +1969,7 @@ exceptionell
         {
           role: "user",
           content: `
-tillkännage
+**tillkännage**
 - A. anropa
 - B. meddela
 - C. besvara
@@ -1988,7 +1988,7 @@ tillkännage
         {
           role: "user",
           content: `
-appell
+**appell**
 - A. löfte
 - B. misstanke
 - C. vädjan
@@ -2007,7 +2007,7 @@ appell
         {
           role: "user",
           content: `
-intrikat
+**intrikat**
 - A. invecklad
 - B. intensiv
 - C. inställsam
@@ -2026,7 +2026,7 @@ intrikat
         {
           role: "user",
           content: `
-debacle
+**debacle**
 - A. klarhet
 - B. omröstning
 - C. misslyckande
@@ -2038,7 +2038,7 @@ debacle
       answer: "C",
     },
 
-    /
+    /**
      * Test Pass 2
      *
      * Reading comprehension #1
@@ -2278,7 +2278,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
         {
           role: "user",
           content: `
-Björnar är allätare, med undantag för jättepandan, som nästan _____ lever av bambuskott.
+**Björnar är allätare, med undantag för jättepandan, som nästan _____ lever av bambuskott.**
 - A. avgörande
 - B. förbehållslöst
 - C. uteslutande
@@ -2296,7 +2296,7 @@ Björnar är allätare, med undantag för jättepandan, som nästan _____ lever 
         {
           role: "user",
           content: `
-En grundläggande förutsättning för att en _____ försöksverksamhet ska _____ är att regelverket inte lägger hinder i vägen.
+**En grundläggande förutsättning för att en _____ försöksverksamhet ska _____ är att regelverket inte lägger hinder i vägen.**
 - A. ändamålsenlig - komma till stånd
 - B. betryggande - ta till orda
 - C. lagstadgad - äga sin riktighet
@@ -2314,7 +2314,7 @@ En grundläggande förutsättning för att en _____ försöksverksamhet ska ____
         {
           role: "user",
           content: `
-Historiskt har läkemedel huvudsakligen _____ på naturprodukter, främst medicinalväxter, men många framställs numera _____ . Läkemedel kan också framställas genom att man utgår från en naturlig substans som _____ .
+**Historiskt har läkemedel huvudsakligen _____ på naturprodukter, främst medicinalväxter, men många framställs numera _____ . Läkemedel kan också framställas genom att man utgår från en naturlig substans som _____ .**
 - A. baserats - syntetiskt - modifieras
 - B. tillverkats - industriellt - stabiliseras
 - C. grundlagts - kemiskt - extraheras
@@ -2332,7 +2332,7 @@ Historiskt har läkemedel huvudsakligen _____ på naturprodukter, främst medici
         {
           role: "user",
           content: `
-När filosofen Renata Salecl skulle köpa ost i en delikatessbutik drabbades hon av beslutsångest. Utbudet var enormt och butiksinnehavarens råd hjälpte _____ . Det berättar Salecl i sin bok Valfrihetens tyranni.
+**När filosofen Renata Salecl skulle köpa ost i en delikatessbutik drabbades hon av beslutsångest. Utbudet var enormt och butiksinnehavarens råd hjälpte _____ . Det berättar Salecl i sin bok Valfrihetens tyranni.**
 - A. på måfå
 - B. dito
 - C. till nöds
@@ -2350,7 +2350,7 @@ När filosofen Renata Salecl skulle köpa ost i en delikatessbutik drabbades hon
         {
           role: "user",
           content: `
-Skogshögskolan är väl anpassad till _____ och smyger sig upp i slänten vid skogsbrynet. Byggnadens storlek blir _____ först när man går in genom entrén.
+**Skogshögskolan är väl anpassad till _____ och smyger sig upp i slänten vid skogsbrynet. Byggnadens storlek blir _____ först när man går in genom entrén.**
 - A. scenografin - märkvärdig
 - B. geologin - uppmärksammad
 - C. topografin - märkbar
@@ -2368,7 +2368,7 @@ Skogshögskolan är väl anpassad till _____ och smyger sig upp i slänten vid s
         {
           role: "user",
           content: `
-PISA-rapporten, en av världens största elevstudier, både politiseras och haussas upp i nyhetsartiklar och på opinionssidor. I en studie från Södertörns högskola framkommer hur PISA har blivit ett _____ i den politiska debatten.
+**PISA-rapporten, en av världens största elevstudier, både politiseras och haussas upp i nyhetsartiklar och på opinionssidor. I en studie från Södertörns högskola framkommer hur PISA har blivit ett _____ i den politiska debatten.**
 - A. vågspel
 - B. långskott
 - C. slagträ
@@ -2386,7 +2386,7 @@ PISA-rapporten, en av världens största elevstudier, både politiseras och haus
         {
           role: "user",
           content: `
-Fysikernas beskrivning av materien, inbegripet våra hjärnor, handlar enbart om _____ mätbara egenskaper. Ändå kan vi känna doften av en ros. Det mjuka organet inne i skallen rymmer en hel värld av _____ upplevelser som bara är tillgängliga från insidan.
+**Fysikernas beskrivning av materien, inbegripet våra hjärnor, handlar enbart om _____ mätbara egenskaper. Ändå kan vi känna doften av en ros. Det mjuka organet inne i skallen rymmer en hel värld av _____ upplevelser som bara är tillgängliga från insidan.**
 - A. distinkt - diffusa
 - B. autentiskt - skenbara
 - C. faktiskt - fiktiva
@@ -2404,7 +2404,7 @@ Fysikernas beskrivning av materien, inbegripet våra hjärnor, handlar enbart om
         {
           role: "user",
           content: `
-Liberalismen är fast _____ i ett antal individuella rättigheter och ett tydligt frihetsideal. Det handlar om rätten att säga och tycka vad man vill, rätten till personlig _____ , rätten att starta föreningar, driva organisationer och bekänna sig till den _____ man föredrar.
+**Liberalismen är fast _____ i ett antal individuella rättigheter och ett tydligt frihetsideal. Det handlar om rätten att säga och tycka vad man vill, rätten till personlig _____ , rätten att starta föreningar, driva organisationer och bekänna sig till den _____ man föredrar.**
 - A. insatt - framgång - åsikt
 - B. rotad - integritet - religion
 - C. säkrad - egendom - klass
@@ -2422,7 +2422,7 @@ Liberalismen är fast _____ i ett antal individuella rättigheter och ett tydlig
         {
           role: "user",
           content: `
-Med hjälp av ögonbottenfotografering kan man se om en person har _____ , det som i vardagligt tal kallas grön starr.
+**Med hjälp av ögonbottenfotografering kan man se om en person har _____ , det som i vardagligt tal kallas grön starr.**
 - A. artros
 - B. glaukom
 - C. afasi
@@ -2440,12 +2440,1043 @@ Med hjälp av ögonbottenfotografering kan man se om en person har _____ , det s
         {
           role: "user",
           content: `
-De nya idéerna orsakade _____ bland det egna partiets _____ och fick därför tonas ner så till den milda grad att det slutgiltiga programmet var lika upphetsande som Sjörapporten en stilla sommardag.
+**De nya idéerna orsakade _____ bland det egna partiets _____ och fick därför tonas ner så till den milda grad att det slutgiltiga programmet var lika upphetsande som Sjörapporten en stilla sommardag.**
 - A. bifall - vapendragare
 - B. ramaskri - gräsrötter
 - C. hurrarop - påhejare
 - D. klagovisor - visselblåsare
 `,
+        },
+      ],
+      answer: "B",
+    },
+
+    /**
+     * Test Pass 5
+     *
+     * Math
+     */
+    {
+      testPass: 5,
+      question: 1,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+4x + 13 = 8x - 31
+Vad är x?
+
+- A. -4,5
+- B. 1,5
+- C. 4,5
+- D. 11
+`,
+        },
+      ],
+      answer: "D",
+    },
+    {
+      testPass: 5,
+      question: 2,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/2.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 5,
+      question: 3,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/3.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
+    },
+    {
+      testPass: 5,
+      question: 4,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+Medelvärdet av 17, 21 och 44 är lika med medelvärdet av 63, 73 och x.
+Vilket värde har x?
+
+- A. -54
+- B. -27
+- C. 0
+- D. 71
+`,
+        },
+      ],
+      answer: "A",
+    },
+    {
+      testPass: 5,
+      question: 5,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+Vägen mellan Julias hem och Annas hem är 12 km lång. De startar hemifrån samtidigt
+för att mötas längs vägen. Julia springer med konstant hastighet och det tar henne
+12 minuter att springa 2 km. Anna går med konstant hastighet och det tar henne
+24 minuter att gå 2 km. Hur lång tid tar det innan de möts?
+
+- A. 36 minuter
+- B. 42 minuter
+- C. 48 minuter
+- D. 72 minuter
+`,
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 5,
+      question: 6,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/6.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "D",
+    },
+    {
+      testPass: 5,
+      question: 7,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/7.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 5,
+      question: 8,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/8.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "D",
+    },
+    {
+      testPass: 5,
+      question: 9,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 1)?
+
+- A. y = -x + 4
+- B. y = x + 2
+- C. y = 2x + 1
+- D. y = 3x + 1
+      `,
+        },
+      ],
+      answer: "A",
+    },
+    {
+      testPass: 5,
+      question: 10,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/10.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      testPass: 5,
+      question: 11,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/11.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      testPass: 5,
+      question: 12,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/12.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 5,
+      question: 13,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+3x > y
+
+Kvantitet I: x
+Kvantitet II: y
+
+- A. I är större än II
+- B. II är större än I
+- C. I är lika med II
+- D. informationen är otillräcklig
+      `,
+        },
+      ],
+      answer: "D",
+    },
+    {
+      testPass: 5,
+      question: 14,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/14.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 5,
+      question: 15,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/15.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "B",
+    },
+    {
+      testPass: 5,
+      question: 16,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+f(x) = 4x + 8
+g(x) = 2x + 4
+a > 0
+
+Kvantitet I:  f(a)
+
+Kvantitet II:  g(2a)
+
+- A. I är större än II
+- B. II är större än I
+- C. I är lika med II
+- D. informationen är otillräcklig
+      `,
+        },
+      ],
+      answer: "A",
+    },
+    {
+      testPass: 5,
+      question: 17,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+En mätserie består av tio heltal mellan 1 och 50. Mätseriens median är 25.
+
+Kvantitet I:  Mätseriens median om det största och det minsta mätvärdet tas bort
+
+Kvantitet II:  25
+
+- A. I är större än II
+- B. II är större än I
+- C. I är lika med II
+- D. informationen är otillräcklig
+      `,
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 5,
+      question: 18,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/18.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      testPass: 5,
+      question: 19,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/19.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "D",
+    },
+    {
+      testPass: 5,
+      question: 20,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/20.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 5,
+      question: 21,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+x < 0
+
+Kvantitet I:  (x + 4)(x - 2)
+
+Kvantitet II:  (x - 4)(x + 2)
+
+- A. I är större än II
+- B. II är större än I
+- C. I är lika med II
+- D. informationen är otillräcklig
+      `,
+        },
+      ],
+      answer: "B",
+    },
+    {
+      testPass: 5,
+      question: 22,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+Priset på en vara stiger med 20% per år.
+
+Kvantitet I:  Den tid det tar tills priset har fördubblats
+
+Kvantitet II:  5 år
+
+- A. I är större än II
+- B. II är större än I
+- C. I är lika med II
+- D. informationen är otillräcklig
+      `,
+        },
+      ],
+      answer: "B",
+    },
+    {
+      testPass: 5,
+      question: 23,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+En förmiddag besöker Roy ett apotek, ett bibliotek och en cykelhandlare. I vilken ordning gör Roy sina besök?
+
+(1) När Roy går till apoteket har han inte varit på biblioteket ännu.
+(2) Besöket hos cykelhandlaren är varken först eller sist.
+
+Tillräcklig information för lösningen erhålls
+
+- A. i (1) men ej i (2)
+- B. i (2) men ej i (1)
+- C. i (1) tillsammans med (2)
+- D. i (1) och (2) var för sig
+- E. ej genom de båda påståendena
+      `,
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 5,
+      question: 24,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/24.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "A",
+    },
+    {
+      testPass: 5,
+      question: 25,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+En tank innehåller endast olja. Tanken är fylld till 4/7 av sin volym. Hur stor volym har tanken?
+
+(1) För att tanken ska bli helt full måste man fylla på ytterligare 1 200 liter olja.
+(2) Om man tömmer ut 200 liter olja ur tanken så kommer den att vara fylld till hälften.
+
+Tillräcklig information för lösningen erhålls
+
+- A. i (1) men ej i (2)
+- B. i (2) men ej i (1)
+- C. i (1) tillsammans med (2)
+- D. i (1) och (2) var för sig
+- E. ej genom de båda påståendena
+      `,
+        },
+      ],
+      answer: "D",
+    },
+    {
+      testPass: 5,
+      question: 26,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+I en stadsdel ligger husen längs gator som går antingen i nord-sydlig eller i öst-västlig riktning. Varje hus ligger längs endast en gata. Vart och ett av husen har antingen ett jämnt eller ett udda nummer. Hur många hus med udda nummer finns det i stadsdelen?
+
+(1) Det finns sammanlagt 150 hus med jämna nummer i stadsdelen. 40 procent av dem ligger längs gator som går i öst-västlig riktning.
+(2) Två tredjedelar av husen med udda nummer ligger längs gator som går i nord-sydlig riktning. Längs gator som går i öst-västlig riktning finns det lika många hus med jämna nummer som med udda nummer.
+
+Tillräcklig information för lösningen erhålls
+
+- A. i (1) men ej i (2)
+- B. i (2) men ej i (1)
+- C. i (1) tillsammans med (2)
+- D. i (1) och (2) var för sig
+- E. ej genom de båda påståendena
+      `,
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 5,
+      question: 27,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: `
+Anna och Berit leker med kulor. Hur många kulor har Anna?
+
+(1) Om Anna hade ytterligare 100 kulor, så skulle hon ha tre gånger så många kulor som hon faktiskt har.
+(2) Om Anna hade 25 kulor färre, så skulle Berit ha fyra gånger så många kulor som Anna.
+
+Tillräcklig information för lösningen erhålls
+
+- A. i (1) men ej i (2)
+- B. i (2) men ej i (1)
+- C. i (1) tillsammans med (2)
+- D. i (1) och (2) var för sig
+- E. ej genom de båda påståendena
+      `,
+        },
+      ],
+      answer: "A",
+    },
+    {
+      testPass: 5,
+      question: 28,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/28.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: "Lös denna uppgiften.",
+        },
+      ],
+      answer: "E",
+    },
+
+    {
+      testPass: 4,
+      question: 29,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Studera kategorin Fritidsresor utrikes. Vilket år var dess andel av det totala antalet resor som störst?
+
+- A. 2011
+- B. 2012
+- C. 2014
+- D. 2016
+      `,
+        },
+      ],
+      answer: "D",
+    },
+    {
+      testPass: 4,
+      question: 30,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Från 2012 till 2013 minskade det totala antalet resor. Vilken var den enda kategori där antalet ökade mellan dessa år?
+
+- A. Affärsresor utrikes
+- B. Fritidsresor utrikes
+- C. Affärsresor inrikes
+- D. Fritidsresor inrikes
+      `,
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 4,
+      question: 31,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Hur fördelade sig antalet resor procentuellt på utrikesresor respektive inrikesresor 2016?
+
+Utrikes    Inrikes
+- A. 25 %    75 %
+- B. 30 %    70 %
+- C. 35 %    65 %
+- D. 45 %    55 %
+      `,
+        },
+      ],
+      answer: "C",
+    },
+
+    {
+      testPass: 4,
+      question: 32,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Vilka två dödsorsaker angavs för sammanlagt en femtedel av de kungsörnar som inkom till Naturhistoriska riksmuseet 1993–2011?
+
+- A. Illegal jakt och El
+- B. Illegal jakt och Vindkraftverk
+- C. El och Vindkraftverk
+- D. Vindkraftverk och Annan olycka
+      `,
+        },
+      ],
+      answer: "A",
+    },
+    {
+      testPass: 4,
+      question: 33,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Vilket var förhållandet mellan antalet kungsörnar med okänd dödsorsak och antalet kungsörnar med känd dödsorsak bland örnarna som påträffades i månaden juni?
+
+- A. 1:2
+- B. 2:1
+- C. 5:8
+- D. 8:5
+      `,
+        },
+      ],
+      answer: "D",
+    },
+    {
+      testPass: 4,
+      question: 34,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+För hur stor andel av de kungsörnar som inkom till Naturhistoriska riksmuseet 1993–2011 angavs fyndmånad?
+
+- A. 72 procent
+- B. 75 procent
+- C. 78 procent
+- D. 82 procent
+      `,
+        },
+      ],
+      answer: "D",
+    },
+    {
+      testPass: 4,
+      question: 35,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Hur stor andel av de som arbetade inom jordbruk, skogsbruk, jakt och fiske i Gävleborgs län 2015 fanns inom jordbruket?
+
+- A. 30 procent
+- B. 35 procent
+- C. 40 procent
+- D. 45 procent
+      `,
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 4,
+      question: 36,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Identifiera det län som hade störst andel förvärvsarbetande inom jordbruk, skogsbruk, jakt och fiske av det totala antalet förvärvsarbetande i länet. Hur många förvärvsarbetande fanns det totalt i detta län 2015?
+
+- A. 11 000
+- B. 27 000
+- C. 43 000
+- D. 62 000
+      `,
+        },
+      ],
+      answer: "B",
+    },
+    {
+      testPass: 4,
+      question: 37,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+För vilket av följande län gällde år 2015 att var femte person som arbetade inom jordbruk, skogsbruk, jakt och fiske var kvinna?
+
+- A. Stockholms län
+- B. Södermanlands län
+- C. Kalmar län
+- D. Skåne län
+      `,
+        },
+      ],
+      answer: "C",
+    },
+    {
+      testPass: 4,
+      question: 38,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-1.png"
+              ),
+            },
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Vilken av följande gårdar stämmer med beskrivningen?
+
+Byggningen eller stugan låg norr om gårdsplanen. Söder om gårdsplanen fanns stall och stallslider.
+
+- A. Kockgård
+- B. Stamgården, nordöstra
+- C. Ryssgård
+- D. Östra Flintgård
+      `,
+        },
+      ],
+      answer: "A",
+    },
+    {
+      testPass: 4,
+      question: 39,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-1.png"
+              ),
+            },
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Identifiera det torvhus, torkställning för torv som låg mellan den nordöstra Stamgården och Ryssgård, intill en stuga. Vad fanns 40 meter rakt söder om detta torvhus?
+
+- A. Hemlighus och dyngskåle
+- B. Loft
+- C. Köksväxter
+- D. Vedlider och slipskåle
+      `,
+        },
+      ],
+      answer: "B",
+    },
+    {
+      testPass: 4,
+      question: 40,
+      system: SYSTEM_PROMPT_MATH,
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-1.png"
+              ),
+            },
+            {
+              type: "image",
+              image: new URL(
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png"
+              ),
+            },
+          ],
+        },
+        {
+          role: "user",
+          content: `
+Fähuset i Måsgård, fähuset i Ammagård samt det sydligast belägna fähuset i Jerkgård utgör hörnen i ett triangelformat område. Hur stort är detta område?
+
+- A. 4 500 m²
+- B. 6 500 m²
+- C. 10 500 m²
+- D. 13 000 m²
+      `,
         },
       ],
       answer: "B",
