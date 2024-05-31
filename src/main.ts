@@ -7,7 +7,7 @@ async function main() {
   const tasks = getExam2024Spring();
 
   const model = {
-    model: ollama("llama3:70b"),
+    model: ollama("llama3:8b"),
     vision: false,
   };
 
