@@ -1,13 +1,13 @@
 import "dotenv/config";
 import { getExam2024Spring } from "./exams/2024-spring";
 import { solveTasks } from "./utils/utils";
-import { ollama } from "ollama-ai-provider";
+import { google } from "@ai-sdk/google";
 
 async function main() {
   const tasks = getExam2024Spring();
 
   const model = {
-    model: ollama("llama3:8b"),
+    model: google("models/gemini-1.5-pro-latest"),
     vision: false,
   };
 

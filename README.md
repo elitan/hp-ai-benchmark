@@ -9,14 +9,14 @@ This repository contains a benchmark for AI models on the Swedish university adm
 | Model                          | Vision | Verbal | Verbal Points | Math  | Math Points | Total |
 | ------------------------------ | :----: | :----: | :-----------: | :---: | :---------: | :---: |
 | gpt-4o                         |  Yes   | 58/60  |      2.0      | 53/80 |     1.1     | 1.55  |
+| models/gemini-pro-vision       |   No   | 56/60  |      1.9      |   -   |      -      |   -   |
+| models/gemini-1.5-flash-latest |   No   | 54/60  |      1.7      |   -   |      -      |   -   |
+| gpt-3.5-turbo                  |   No   | 51/60  |      1.6      |   -   |      -      |   -   |
 | llama3-70b                     |   No   | 50/60  |      1.5      |   -   |      -      |   -   |
 | llama3-7b                      |   No   | 31/60  |      0.8      |   -   |      -      |   -   |
-| gpt-3.5-turbo                  |   No   |   -    |       -       |   -   |      -      |   -   |
 | claude-3-haiku-20240307        |   No   |   -    |       -       |   -   |      -      |   -   |
 | claude-3-sonnet-20240229       |   No   |   -    |       -       |   -   |      -      |   -   |
 | claude-3-opus-20240229         |   No   |   -    |       -       |   -   |      -      |   -   |
-| models/gemini-1.5-flash-latest |   No   |   -    |       -       |   -   |      -      |   -   |
-| models/gemini-pro-vision       |   No   |   -    |       -       |   -   |      -      |   -   |
 
 #### Test
 
