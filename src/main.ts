@@ -1,47 +1,23 @@
 import "dotenv/config";
 import { getExam2024Spring } from "./exams/2024-spring";
-import { solveStream } from "./utils/utils";
-
-export interface Message {
-  role: "user" | "assistant";
-  content: string;
-}
+import { solveTasks } from "./utils/utils";
+import { openai } from "@ai-sdk/openai";
 
 async function main() {
   const tasks = getExam2024Spring();
 
-  let question = 1;
-  let correctAnswers = 0;
-  let tokensUsed = 0;
+  const model = {
+    model: openai("gpt-4o"),
+    vision: true,
+  };
 
-  for (const task of tasks.slice(0, 3)) {
-    console.log("");
-    console.log(`Question ${question}:`);
-    console.log(task.messages);
-
-    const { system, messages } = task;
-    const {
-      answer,
-      text,
-      // usage: { totalTokens },
-    } = await solveStream({ system, messages });
-
-    console.log(text);
-
-    if (answer === task.answer) {
-      console.log(`Correct answer! ${answer}`);
-      correctAnswers++;
-    } else {
-      console.log(`Wrong answer! Expected: ${task.answer}, got: ${answer}`);
-    }
-
-    // tokensUsed += totalTokens;
-    question++;
-  }
+  const { answers, tokensUsed } = await solveTasks({ tasks, model });
 
   console.log("");
-  console.log(`Correct answers: ${correctAnswers}/${tasks.length}`);
-  // console.log(`Total tokens used: ${tokensUsed}`);
+  console.log(`Correct answers:`);
+  console.log(`Verbal: ${answers.verbal.correct}/${answers.verbal.total}`);
+  console.log(`Math: ${answers.math.correct}/${answers.math.total}`);
+  console.log(`Total tokens used: ${tokensUsed}`);
 }
 
 main();

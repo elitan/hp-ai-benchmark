@@ -4,15 +4,16 @@ import { CoreMessage } from "ai";
  * https://www.studera.nu/hogskoleprov/fpn/provfragor-och-facit-varen-2024/
  */
 
-interface Exam {
+export interface Exam {
   testPass: number;
   question: number;
+  type: "verbal" | "math";
   system: string;
   messages: CoreMessage[];
   answer: string;
 }
 
-const SYSTEM_PROMPT_WORD_COMPREHENSION = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska Ditt mål är att alltid svara korrekt för att få alla rätt.
+const SYSTEM_PROMPT_WORD_COMPREHENSION = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska. Ditt mål är att alltid svara korrekt för att få alla rätt.
 
 Välj rätt synonym från de angivna alternativen.
 
@@ -41,10 +42,6 @@ Lös varje uppgift i två steg.
 
 Steg 1: Resonera för att svara korrekt
 Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
-
-/**
- * asd
- */
 
 const readingAbilityText1 = `De blodkärlsinflammationer som kallas vaskuliter leder oftast till ett relativt milt sjukdomsförlopp, men de kan i vissa fall vara livshotande. Denna ovanliga grupp av autoimmuna sjukdomar brukar behandlas med kortison och olika typer av cellhämmande läkemedel, men kanske kan ny kunskap om vesiklar öppna nya möjligheter.
 - Genom att blockera vesiklarnas aktivitet har vi sett att inflammationsprocessen bromsas upp, säger Maria
@@ -214,6 +211,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 1,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -233,6 +231,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 2,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -252,6 +251,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 3,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -271,6 +271,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 4,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -290,6 +291,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 5,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -309,6 +311,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 6,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -328,6 +331,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 7,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -347,6 +351,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 8,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -366,6 +371,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 9,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -385,6 +391,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 10,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -410,6 +417,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 11,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -432,6 +440,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 12,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -460,6 +469,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 13,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -483,6 +493,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 14,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -506,6 +517,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 15,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -529,6 +541,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 16,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -557,6 +570,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 17,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -579,6 +593,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 18,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -601,6 +616,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 19,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -623,6 +639,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 20,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -651,6 +668,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 21,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -670,6 +688,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 22,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -689,6 +708,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 23,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -707,6 +727,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 24,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -725,6 +746,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 25,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -743,6 +765,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 26,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -761,6 +784,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 27,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -779,6 +803,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 28,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -797,6 +822,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 29,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -815,6 +841,7 @@ export function getExam2024Spring() {
     {
       testPass: 1,
       question: 30,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -839,6 +866,7 @@ export function getExam2024Spring() {
     {
       testPass: 2,
       question: 1,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -852,16 +880,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
     {
       testPass: 2,
       question: 2,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -875,16 +900,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "D",
     },
     {
       testPass: 2,
       question: 3,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -898,16 +920,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "D",
     },
     {
       testPass: 2,
       question: 4,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -921,16 +940,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
     {
       testPass: 2,
       question: 5,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -944,16 +960,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
     {
       testPass: 2,
       question: 6,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -967,16 +980,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
     {
       testPass: 2,
       question: 7,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -990,16 +1000,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
     {
       testPass: 2,
       question: 8,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1013,16 +1020,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "D",
     },
     {
       testPass: 2,
       question: 9,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1036,16 +1040,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
     {
       testPass: 2,
       question: 10,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1059,16 +1060,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
     {
       testPass: 2,
       question: 11,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1082,16 +1080,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "D",
     },
     {
       testPass: 2,
       question: 12,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1105,16 +1100,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
     {
       testPass: 2,
       question: 13,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1128,16 +1120,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
     {
       testPass: 2,
       question: 14,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1151,16 +1140,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
     {
       testPass: 2,
       question: 15,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1174,16 +1160,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
     {
       testPass: 2,
       question: 16,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1197,16 +1180,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "D",
     },
     {
       testPass: 2,
       question: 17,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1220,16 +1200,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
     {
       testPass: 2,
       question: 18,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1243,16 +1220,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "D",
     },
     {
       testPass: 2,
       question: 19,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1266,16 +1240,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
     {
       testPass: 2,
       question: 20,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1289,16 +1260,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
     {
       testPass: 2,
       question: 21,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1312,16 +1280,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
     {
       testPass: 2,
       question: 22,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1335,16 +1300,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
     {
       testPass: 2,
       question: 23,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1358,16 +1320,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "E",
     },
     {
       testPass: 2,
       question: 24,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1381,16 +1340,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
     {
       testPass: 2,
       question: 25,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1404,16 +1360,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "E",
     },
     {
       testPass: 2,
       question: 26,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1427,16 +1380,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "D",
     },
     {
       testPass: 2,
       question: 27,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1450,16 +1400,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
     {
       testPass: 2,
       question: 28,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1473,16 +1420,13 @@ export function getExam2024Spring() {
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
     {
       testPass: 2,
       question: 29,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1512,6 +1456,7 @@ export function getExam2024Spring() {
     {
       testPass: 2,
       question: 30,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1541,6 +1486,7 @@ export function getExam2024Spring() {
     {
       testPass: 2,
       question: 31,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1571,6 +1517,7 @@ export function getExam2024Spring() {
     {
       testPass: 2,
       question: 32,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1601,6 +1548,7 @@ Vilket svarsförslag beskriver bäst förhållandet mellan opererande, invärtes
     {
       testPass: 2,
       question: 33,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1631,6 +1579,7 @@ Identifiera de tre specialiteterna inom invärtesmedicin med flest utfärdade sp
     {
       testPass: 2,
       question: 34,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1661,6 +1610,7 @@ Vilken opererande specialitet hade 2010 flest specialistbevis som hörde till pe
     {
       testPass: 2,
       question: 35,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1691,6 +1641,7 @@ Hur stort var antalet personer som flyttade inom Västerort jämfört med antale
     {
       testPass: 2,
       question: 36,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1721,6 +1672,7 @@ Hur många fler flyttade inom Stockholms kommun än till Stockholms kommun?
     {
       testPass: 2,
       question: 37,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1752,6 +1704,7 @@ Vad blir flyttnettot om man räknar antalet personer som flyttade till Söderort
     {
       testPass: 2,
       question: 38,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1782,6 +1735,7 @@ Studera de olika djurslagen med avseende på hur stor andel av den totala slakte
     {
       testPass: 2,
       question: 39,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1812,6 +1766,7 @@ Hur stor andel av slakten av de redovisade ekologiskt uppfödda djurslagen 2014 
     {
       testPass: 2,
       question: 40,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -1850,6 +1805,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 1,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -1869,6 +1825,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 2,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -1888,6 +1845,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 3,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -1907,6 +1865,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 4,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -1926,6 +1885,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 5,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -1945,6 +1905,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 6,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -1964,6 +1925,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 7,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -1983,6 +1945,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 8,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -2002,6 +1965,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 9,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -2021,6 +1985,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 10,
+      type: "verbal",
       system: SYSTEM_PROMPT_WORD_COMPREHENSION,
       messages: [
         {
@@ -2046,6 +2011,7 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
     {
       testPass: 4,
       question: 11,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -2069,6 +2035,7 @@ Vilken orsak till problemen med årsredovisningarna framhölls av NN?
     {
       testPass: 4,
       question: 12,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -2093,6 +2060,7 @@ Vad uppmärksammade disciplinnämnden särskilt i sin bedömning av ärendet, en
     {
       testPass: 4,
       question: 13,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -2116,6 +2084,7 @@ Vilket problem framhåller textförfattaren beträffande det etablerade sättet 
     {
       testPass: 4,
       question: 14,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -2139,6 +2108,7 @@ Textförfattaren ifrågasätter något som hon anser vara en etablerad men före
     {
       testPass: 4,
       question: 15,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -2162,6 +2132,7 @@ Om vi följer textens resonemang, vilket är då det mest rimliga sättet att f�
     {
       testPass: 4,
       question: 16,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -2186,6 +2157,7 @@ Vilken kvalitet hos essän vill textförfattaren framför allt betona med exempl
     {
       testPass: 4,
       question: 17,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -2208,6 +2180,7 @@ Vilken roll spelade teatern för etableringen av de nya yrkena, enligt texten?
     {
       testPass: 4,
       question: 18,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -2230,6 +2203,7 @@ Vad var enligt texten en anledning till att skådespelaryrket och de nya yrkena 
     {
       testPass: 4,
       question: 19,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -2252,6 +2226,7 @@ Vad var enligt texten utmärkande för den elisabetanska teaterns professionalis
     {
       testPass: 4,
       question: 20,
+      type: "verbal",
       system: SYSTEM_PROMPT_READING_COMPREHENSION,
       messages: [
         {
@@ -2273,6 +2248,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 4,
       question: 21,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -2291,6 +2267,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 4,
       question: 22,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -2309,6 +2286,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 4,
       question: 23,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -2327,6 +2305,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 4,
       question: 24,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -2345,6 +2324,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 4,
       question: 25,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -2363,6 +2343,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 4,
       question: 26,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -2381,6 +2362,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 4,
       question: 27,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -2399,6 +2381,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 4,
       question: 28,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -2417,6 +2400,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 4,
       question: 29,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -2435,6 +2419,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 4,
       question: 30,
+      type: "verbal",
       system: SYSTEM_PROMPT_SENTENCE_COMPLETION,
       messages: [
         {
@@ -2459,6 +2444,7 @@ Vad framstår som en viktig poäng i Natasha Kordas bok?
     {
       testPass: 5,
       question: 1,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2479,6 +2465,7 @@ Vad är x?
     {
       testPass: 5,
       question: 2,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2492,16 +2479,13 @@ Vad är x?
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
     {
       testPass: 5,
       question: 3,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2515,16 +2499,13 @@ Vad är x?
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
     {
       testPass: 5,
       question: 4,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2545,6 +2526,7 @@ Vilket värde har x?
     {
       testPass: 5,
       question: 5,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2567,6 +2549,7 @@ för att mötas längs vägen. Julia springer med konstant hastighet och det tar
     {
       testPass: 5,
       question: 6,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2580,16 +2563,13 @@ för att mötas längs vägen. Julia springer med konstant hastighet och det tar
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "D",
     },
     {
       testPass: 5,
       question: 7,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2603,16 +2583,13 @@ för att mötas längs vägen. Julia springer med konstant hastighet och det tar
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
     {
       testPass: 5,
       question: 8,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2626,16 +2603,13 @@ för att mötas längs vägen. Julia springer med konstant hastighet och det tar
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "D",
     },
     {
       testPass: 5,
       question: 9,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2655,6 +2629,7 @@ Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 
     {
       testPass: 5,
       question: 10,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2668,16 +2643,13 @@ Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
     {
       testPass: 5,
       question: 11,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2691,16 +2663,13 @@ Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
     {
       testPass: 5,
       question: 12,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2714,16 +2683,13 @@ Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
     {
       testPass: 5,
       question: 13,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2746,6 +2712,7 @@ Kvantitet II: y
     {
       testPass: 5,
       question: 14,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2759,16 +2726,13 @@ Kvantitet II: y
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
     {
       testPass: 5,
       question: 15,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2782,16 +2746,13 @@ Kvantitet II: y
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "B",
     },
     {
       testPass: 5,
       question: 16,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2817,6 +2778,7 @@ Kvantitet II:  g(2a)
     {
       testPass: 5,
       question: 17,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2840,6 +2802,7 @@ Kvantitet II:  25
     {
       testPass: 5,
       question: 18,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2853,16 +2816,13 @@ Kvantitet II:  25
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
     {
       testPass: 5,
       question: 19,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2876,16 +2836,13 @@ Kvantitet II:  25
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "D",
     },
     {
       testPass: 5,
       question: 20,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2899,16 +2856,13 @@ Kvantitet II:  25
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "C",
     },
     {
       testPass: 5,
       question: 21,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2932,6 +2886,7 @@ Kvantitet II:  (x - 4)(x + 2)
     {
       testPass: 5,
       question: 22,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2955,6 +2910,7 @@ Kvantitet II:  5 år
     {
       testPass: 5,
       question: 23,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2980,6 +2936,7 @@ Tillräcklig information för lösningen erhålls
     {
       testPass: 5,
       question: 24,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -2993,16 +2950,13 @@ Tillräcklig information för lösningen erhålls
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "A",
     },
     {
       testPass: 5,
       question: 25,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3028,6 +2982,7 @@ Tillräcklig information för lösningen erhålls
     {
       testPass: 5,
       question: 26,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3053,6 +3008,7 @@ Tillräcklig information för lösningen erhålls
     {
       testPass: 5,
       question: 27,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3078,6 +3034,7 @@ Tillräcklig information för lösningen erhålls
     {
       testPass: 5,
       question: 28,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3091,10 +3048,6 @@ Tillräcklig information för lösningen erhålls
             },
           ],
         },
-        {
-          role: "user",
-          content: "Lös denna uppgiften.",
-        },
       ],
       answer: "E",
     },
@@ -3102,6 +3055,7 @@ Tillräcklig information för lösningen erhålls
     {
       testPass: 4,
       question: 29,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3132,6 +3086,7 @@ Studera kategorin Fritidsresor utrikes. Vilket år var dess andel av det totala 
     {
       testPass: 4,
       question: 30,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3162,6 +3117,7 @@ Från 2012 till 2013 minskade det totala antalet resor. Vilken var den enda kate
     {
       testPass: 4,
       question: 31,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3194,6 +3150,7 @@ Utrikes    Inrikes
     {
       testPass: 4,
       question: 32,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3224,6 +3181,7 @@ Vilka två dödsorsaker angavs för sammanlagt en femtedel av de kungsörnar som
     {
       testPass: 4,
       question: 33,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3254,6 +3212,7 @@ Vilket var förhållandet mellan antalet kungsörnar med okänd dödsorsak och a
     {
       testPass: 4,
       question: 34,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3284,6 +3243,7 @@ För hur stor andel av de kungsörnar som inkom till Naturhistoriska riksmuseet 
     {
       testPass: 4,
       question: 35,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3314,6 +3274,7 @@ Hur stor andel av de som arbetade inom jordbruk, skogsbruk, jakt och fiske i Gä
     {
       testPass: 4,
       question: 36,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3344,6 +3305,7 @@ Identifiera det län som hade störst andel förvärvsarbetande inom jordbruk, s
     {
       testPass: 4,
       question: 37,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3374,6 +3336,7 @@ För vilket av följande län gällde år 2015 att var femte person som arbetade
     {
       testPass: 4,
       question: 38,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3412,6 +3375,7 @@ Byggningen eller stugan låg norr om gårdsplanen. Söder om gårdsplanen fanns 
     {
       testPass: 4,
       question: 39,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
@@ -3448,6 +3412,7 @@ Identifiera det torvhus, torkställning för torv som låg mellan den nordöstra
     {
       testPass: 4,
       question: 40,
+      type: "math",
       system: SYSTEM_PROMPT_MATH,
       messages: [
         {
