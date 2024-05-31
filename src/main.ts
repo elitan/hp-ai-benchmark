@@ -1,14 +1,14 @@
 import "dotenv/config";
 import { getExam2024Spring } from "./exams/2024-spring";
 import { solveTasks } from "./utils/utils";
-import { openai } from "@ai-sdk/openai";
+import { ollama } from "ollama-ai-provider";
 
 async function main() {
   const tasks = getExam2024Spring();
 
   const model = {
-    model: openai("gpt-4o"),
-    vision: true,
+    model: ollama("llama3:70b"),
+    vision: false,
   };
 
   const { answers, tokensUsed } = await solveTasks({ tasks, model });
