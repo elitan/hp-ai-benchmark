@@ -1,14 +1,14 @@
 import "dotenv/config";
 import { getExam2024Spring } from "./exams/2024-spring";
 import { solveTasks } from "./utils/utils";
-import { google } from "@ai-sdk/google";
+import { openai } from "@ai-sdk/openai";
 
 async function main() {
   const tasks = getExam2024Spring();
 
   const model = {
-    model: google("models/gemini-1.5-pro-latest"),
-    vision: false,
+    model: openai("gpt-4-turbo"),
+    vision: true,
   };
 
   const { answers, tokensUsed } = await solveTasks({ tasks, model });
