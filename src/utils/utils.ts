@@ -21,6 +21,10 @@ interface SolveTasksProps {
   model: {
     model: LanguageModel | any;
     vision: boolean;
+    type: {
+      verbal: boolean;
+      math: boolean;
+    };
   };
 }
 
@@ -43,7 +47,7 @@ export async function solveTasks(props: SolveTasksProps) {
   for (const task of tasks) {
     console.log("");
     console.log(`Question ${question}:`);
-    console.log(task.messages);
+    console.log(JSON.stringify(task.messages, null, 2));
 
     const { system, messages } = task;
 
@@ -63,6 +67,16 @@ export async function solveTasks(props: SolveTasksProps) {
         );
         continue;
       }
+    }
+
+    if (model.type.verbal && !task.type.includes("verbal")) {
+      console.log(`Skipping task because it's a math task`);
+      continue;
+    }
+
+    if (model.type.math && !task.type.includes("math")) {
+      console.log(`Skipping task because it's a verbal task`);
+      continue;
     }
 
     const {

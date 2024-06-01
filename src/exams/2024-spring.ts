@@ -422,17 +422,22 @@ export function getExam2024Spring() {
       messages: [
         {
           role: "user",
-          content: readingAbilityText1,
-        },
-        {
-          role: "user",
-          content: `
-**Vad av följande är vesiklar ett exempel på, om man följer textens resonemang?**
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText1,
+            },
+            {
+              type: "text",
+              text: `
+            **Vad av följande är vesiklar ett exempel på, om man följer textens resonemang?**
 - A. Att ett kroppsligt förlopp kan rubbas utan egentlig orsak.
 - B. Att cellerna kan använda en och samma process för olika syften.
 - C. Att kroppsegna ämnen kan bromsa en pågående sjukdomsprocess.
 - D. Att främmande ämnen kan både skada och stärka cellerna.
 `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -445,17 +450,22 @@ export function getExam2024Spring() {
       messages: [
         {
           role: "user",
-          content: readingAbilityText1,
-        },
-        {
-          role: "user",
-          content: `
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText1,
+            },
+            {
+              type: "text",
+              text: `
 **Vad skulle kunna bli användbart vid behandling av vaskulit, enligt Maria Mossbergs forskningsresultat?**
 - A. Ökad aktivitetsgrad hos vesiklar.
 - B. Speciellt odlad blodplasma.
 - C. Redan tillgängliga mediciner.
 - D. Vesiklars rengörande funktion.
 `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -474,17 +484,22 @@ export function getExam2024Spring() {
       messages: [
         {
           role: "user",
-          content: readingAbilityText2,
-        },
-        {
-          role: "user",
-          content: `
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText2,
+            },
+            {
+              type: "text",
+              text: `
 **Vad påpekar textförfattarna om de hänsynsytor som av naturvårdsskäl undantas från avverkning?**
 - A. De är alltför olika och inte tillräckligt artrika.
 - B. De är inte unika nog att klassas som nyckelbiotoper.
 - C. De är inte placerade där hotet mot skogen är som störst.
 - D. De är alltför utspridda och inte tillräckligt stora.
 `,
+            },
+          ],
         },
       ],
       answer: "D",
@@ -498,17 +513,22 @@ export function getExam2024Spring() {
       messages: [
         {
           role: "user",
-          content: readingAbilityText2,
-        },
-        {
-          role: "user",
-          content: `
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText2,
+            },
+            {
+              type: "text",
+              text: `
 **Vad kritiserar textförfattarna när det gäller ”den svenska skogsbruksmodellen”?**
 - A. Att modellen har en otydlig målsättning.
 - B. Att det råder obalans mellan skogsnäringens och naturvårdens intressen.
 - C. Att modellen bygger på otidsenlig forskning.
 - D. Att det saknas visioner om skogslandskapets framtid.
 `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -522,17 +542,22 @@ export function getExam2024Spring() {
       messages: [
         {
           role: "user",
-          content: readingAbilityText2,
-        },
-        {
-          role: "user",
-          content: `
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText2,
+            },
+            {
+              type: "text",
+              text: `
 **Textförfattarna anser att den svenska skogen inte brukas på ett hållbart sätt i dag. Vad uppfattar de som det huvudsakliga problemet?**
 - A. Produktionstakten, som ständigt minskar den totala skogsarealen i Sverige.
 - B. Skogsindustrins utsläpp, som sprider farliga ämnen i ett ömtåligt landskap.
 - C. Sättet att avverka, vilket allvarligt skadar den biologiska mångfalden i skogen.
 - D. Avsaknaden av oberoende forskning, vilket leder till ett ensidigt skogsbruk.
 `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -546,17 +571,22 @@ export function getExam2024Spring() {
       messages: [
         {
           role: "user",
-          content: readingAbilityText2,
-        },
-        {
-          role: "user",
-          content: `
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText2,
+            },
+            {
+              type: "text",
+              text: `
 **Vilken av följande förändringar av det svenska skogsbruket efterlyser textförfattarna?**
 - A. Att EU:s naturvårdsdirektiv anpassas till svenska förhållanden.
 - B. Att forskningen inriktas på att utveckla alternativ till skogsråvara.
 - C. Att den produktiva skogsmarken utökas och blir mer enhetlig.
 - D. Att skogsbolagens påverkan begränsas och att andra samhällsintressen ges större utrymme.
 `,
+            },
+          ],
         },
       ],
       answer: "D",
@@ -575,17 +605,22 @@ export function getExam2024Spring() {
       messages: [
         {
           role: "user",
-          content: readingAbilityText3,
-        },
-        {
-          role: "user",
-          content: `
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText3,
+            },
+            {
+              type: "text",
+              text: `
 **Hur förhåller sig Tommy till sin morfar, att döma av hans tankar under begravningen?**
 - A. Han dömer morfadern för dennes livsval och begravningen väcker hans ilska.
 - B. Han är ointresserad av morfadern och drömmer sig bort under begravningen.
 - C. Han tänker på sin morfar och känner att begravningen inte gör honom rättvisa.
 - D. Han beundrar sin morfar och tänker under begravningen på hans liv.
 `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -598,17 +633,22 @@ export function getExam2024Spring() {
       messages: [
         {
           role: "user",
-          content: readingAbilityText3,
-        },
-        {
-          role: "user",
-          content: `
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText3,
+            },
+            {
+              type: "text",
+              text: `
 **Vilket svarsförslag överensstämmer bäst med hur Tommy uppfattar sin mor?**
 - A. Hon är svartsjuk och tänker mest på sig själv.
 - B. Hon är dominant och noga med detaljerna.
 - C. Hon är självuppoffrande och döljer sina egna behov.
 - D. Hon är nonchalant och vill framstå som finare än hon är.
 `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -621,17 +661,22 @@ export function getExam2024Spring() {
       messages: [
         {
           role: "user",
-          content: readingAbilityText3,
-        },
-        {
-          role: "user",
-          content: `
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText3,
+            },
+            {
+              type: "text",
+              text: `
 **Vilken mening sammanfattar begravningen bäst, om man utgår från textens beskrivning?**
 - A. Det är en enkel ceremoni med endast närmast sörjande och en opersonlig präst.
 - B. Det är en högtidlig begravning med uppklädda besökare och en värdig präst.
 - C. Det är en stillsam ceremoni utan musik med en kortfattad präst.
 - D. Det är en sorgtyngd begravning med gråtande deltagare och en empatisk präst.
 `,
+            },
+          ],
         },
       ],
       answer: "A",
@@ -644,17 +689,22 @@ export function getExam2024Spring() {
       messages: [
         {
           role: "user",
-          content: readingAbilityText3,
-        },
-        {
-          role: "user",
-          content: `
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText3,
+            },
+            {
+              type: "text",
+              text: `
 **Vilken är den rimligaste tolkningen av Tommys tankar och beteenden efter begravningsceremonins slut?**
 - A. Att han är nyfiken på Gun.
 - B. Att han struntar i Gun.
 - C. Att han tycker synd om Gun.
 - D. Att han är sur på Gun.
 `,
+            },
+          ],
         },
       ],
       answer: "A",
@@ -1438,17 +1488,17 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 **Vilket av svarsförslagen anger de två kommungrupper som var mest lika varandra vad gäller antal tågankomster och genomsnittlig försening?**
 - A. Storstäder och Kommuner i tätbefolkad region
 - B. Förortskommuner till storstäder och Pendlingskommuner
 - C. Pendlingskommuner och Varuproducerande kommuner
 - D. Varuproducerande kommuner och Kommuner i tätbefolkad region
 `,
+            },
+          ],
         },
       ],
       answer: "A",
@@ -1468,17 +1518,17 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 **Hur många tågankomster finns redovisade för Förortskommuner till storstäder jämfört med Förortskommuner till större städer?**
 - A. Hälften så många
 - B. Lika många
 - C. Dubbelt så många
 - D. Tre gånger så många
 `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -1498,17 +1548,17 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 **Hur många minuter sammanlagt var de ankommande tågen försenade i Kommuner i glesbefolkad region?**
 - A. 220000 minuter
 - B. 330000 minuter
 - C. 440000 minuter
 - D. 550000 minuter
 `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -1529,18 +1579,18 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
-Vilket svarsförslag beskriver bäst förhållandet mellan opererande, invärtesmedicinska och barnmedicinska specialiteter vad gäller det totala antalet specialistbevis 2012?
+            {
+              type: "text",
+              text: `
+**Vilket svarsförslag beskriver bäst förhållandet mellan opererande, invärtesmedicinska och barnmedicinska specialiteter vad gäller det totala antalet specialistbevis 2012?**
 
 - A. 5:3:1
 - B. 5:4:1
 - C. 6:4:1
 - D. 6:5:1
 `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -1560,18 +1610,18 @@ Vilket svarsförslag beskriver bäst förhållandet mellan opererande, invärtes
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
-Identifiera de tre specialiteterna inom invärtesmedicin med flest utfärdade specialistbevis 2011. Hur stor andel utgjorde dessa av det totala antalet specialistbevis inom invärtesmedicin samma år?
+            {
+              type: "text",
+              text: `
+**Identifiera de tre specialiteterna inom invärtesmedicin med flest utfärdade specialistbevis 2011. Hur stor andel utgjorde dessa av det totala antalet specialistbevis inom invärtesmedicin samma år?**
 
 - A. 55 procent
 - B. 65 procent
 - C. 75 procent
 - D. 85 procent
 `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -1591,17 +1641,17 @@ Identifiera de tre specialiteterna inom invärtesmedicin med flest utfärdade sp
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
-Vilken opererande specialitet hade 2010 flest specialistbevis som hörde till personer som var 65 år eller äldre?
+            {
+              type: "text",
+              text: `
+**Vilken opererande specialitet hade 2010 flest specialistbevis som hörde till personer som var 65 år eller äldre?**
 - A. Kirurgi
 - B. Ortopedi
 - C. Anestesi och intensivvård
 - D. Obstetrik och gynekologi
 `,
+            },
+          ],
         },
       ],
       answer: "A",
@@ -1622,18 +1672,18 @@ Vilken opererande specialitet hade 2010 flest specialistbevis som hörde till pe
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
-Hur stort var antalet personer som flyttade inom Västerort jämfört med antalet som flyttade från Söderort till Västerort?
+            {
+              type: "text",
+              text: `
+**Hur stort var antalet personer som flyttade inom Västerort jämfört med antalet som flyttade från Söderort till Västerort?**
 
 - A. Fyra gånger så stort
 - B. Fem gånger så stort
 - C. Sex gånger så stort
 - D. Sju gånger så stort
 `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -1653,18 +1703,18 @@ Hur stort var antalet personer som flyttade inom Västerort jämfört med antale
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
-Hur många fler flyttade inom Stockholms kommun än till Stockholms kommun?
+            {
+              type: "text",
+              text: `
+**Hur många fler flyttade inom Stockholms kommun än till Stockholms kommun?**
 
 - A. 34927
 - B. 35619
 - C. 37247
 - D. 42074
 `,
+            },
+          ],
         },
       ],
       answer: "A",
@@ -1684,18 +1734,18 @@ Hur många fler flyttade inom Stockholms kommun än till Stockholms kommun?
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
-Vad blir flyttnettot om man räknar antalet personer som flyttade till Söderort och tar bort antalet som flyttade från Söderort?
+            {
+              type: "text",
+              text: `
+**Vad blir flyttnettot om man räknar antalet personer som flyttade till Söderort och tar bort antalet som flyttade från Söderort?**
 
 - A. -2168
 - B. -967
 - C. +1561
 - D. +2528
 `,
+            },
+          ],
         },
       ],
       answer: "D",
@@ -1716,18 +1766,18 @@ Vad blir flyttnettot om man räknar antalet personer som flyttade till Söderort
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
-Studera de olika djurslagen med avseende på hur stor andel av den totala slakten som utgjordes av ekologiskt uppfödda djur. Hur stor var den största noterade ökningen av denna andel om man jämför 2009 och 2015?
+            {
+              type: "text",
+              text: `
+**Studera de olika djurslagen med avseende på hur stor andel av den totala slakten som utgjordes av ekologiskt uppfödda djur. Hur stor var den största noterade ökningen av denna andel om man jämför 2009 och 2015?**
 
 - A. 5 procentenheter
 - B. 8 procentenheter
 - C. 55 procentenheter
 - D. 75 procentenheter
 `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -1747,18 +1797,18 @@ Studera de olika djurslagen med avseende på hur stor andel av den totala slakte
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
-Hur stor andel av slakten av de redovisade ekologiskt uppfödda djurslagen 2014 utgjorde slakten av svin?
+            {
+              type: "text",
+              text: `
+**Hur stor andel av slakten av de redovisade ekologiskt uppfödda djurslagen 2014 utgjorde slakten av svin?**
 
 - A. 1/6
 - B. 1/4
 - C. 1/3
 - D. 2/5
 `,
+            },
+          ],
         },
       ],
       answer: "A",
@@ -1778,18 +1828,18 @@ Hur stor andel av slakten av de redovisade ekologiskt uppfödda djurslagen 2014 
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
-Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den totala slakten av får och lamm. Hur stor var den totala slakten av får och lamm 2012?
+            {
+              type: "text",
+              text: `
+**Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den totala slakten av får och lamm. Hur stor var den totala slakten av får och lamm 2012?**
 
 - A. 1000 ton
 - B. 2000 ton
 - C. 4000 ton
 - D. 5000 ton
 `,
+            },
+          ],
         },
       ],
       answer: "D",
@@ -2016,18 +2066,23 @@ Slakten av ekologiskt uppfödda får och lamm utgör en mindre andel av den tota
       messages: [
         {
           role: "user",
-          content: readingAbilityText4,
-        },
-        {
-          role: "user",
-          content: `
-Vilken orsak till problemen med årsredovisningarna framhölls av NN?
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText4,
+            },
+            {
+              type: "text",
+              text: `
+**Vilken orsak till problemen med årsredovisningarna framhölls av NN?**
 
 - A. Att företaget hade haft brist på redovisningsansvarig personal.
 - B. Att kommunikationen hade brustit mellan den redovisningsansvarige och revisorn.
 - C. Att den redovisningsansvariges arbetsbörda hade varit för stor.
 - D. Att redovisningsansvaret hade hanterats provisoriskt dag för dag.
 `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -2040,18 +2095,23 @@ Vilken orsak till problemen med årsredovisningarna framhölls av NN?
       messages: [
         {
           role: "user",
-          content: readingAbilityText4,
-        },
-        {
-          role: "user",
-          content: `
-Vad uppmärksammade disciplinnämnden särskilt i sin bedömning av ärendet, enligt texten?
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText4,
+            },
+            {
+              type: "text",
+              text: `
+**Vad uppmärksammade disciplinnämnden särskilt i sin bedömning av ärendet, enligt texten?**
 
 - A. Att NN inte hade insett att försummelserna var ett lagbrott.
 - B. Att NN hade varit försumlig inom sitt eget yrkesområde.
 - C. Att NN inte hade vidtagit några åtgärder mot försummelserna.
 - D. Att NN hade varit medveten om sina försummelser.
 `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -2065,18 +2125,23 @@ Vad uppmärksammade disciplinnämnden särskilt i sin bedömning av ärendet, en
       messages: [
         {
           role: "user",
-          content: readingAbilityText5,
-        },
-        {
-          role: "user",
-          content: `
-Vilket problem framhåller textförfattaren beträffande det etablerade sättet att skriva akademiskt?
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText5,
+            },
+            {
+              type: "text",
+              text: `
+**Vilket problem framhåller textförfattaren beträffande det etablerade sättet att skriva akademiskt?**
 
 - A. Att forskare får lägga orimligt mycket tid på att lära sig det vetenskapliga skrivsättet.
 - B. Att idealen som vägleder forskares sätt att skriva inte längre belönas inom akademin.
 - C. Att den språkliga utformningen inte följer vetenskapens principer för objektivitet.
 - D. Att den vetenskapliga stilens krav begränsar textens förmåga att kommunicera med omvärlden.
 `,
+            },
+          ],
         },
       ],
       answer: "D",
@@ -2089,18 +2154,23 @@ Vilket problem framhåller textförfattaren beträffande det etablerade sättet 
       messages: [
         {
           role: "user",
-          content: readingAbilityText5,
-        },
-        {
-          role: "user",
-          content: `
-Textförfattaren ifrågasätter något som hon anser vara en etablerad men förenklad sanning. Vad?
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText5,
+            },
+            {
+              type: "text",
+              text: `
+**Textförfattaren ifrågasätter något som hon anser vara en etablerad men förenklad sanning. Vad?**
 
 - A. Att vetenskapliga framsteg väcker känslomässigt engagemang.
 - B. Att riktig vetenskap utesluter ett subjektivt förhållningssätt.
 - C. Att gestaltning gör vetenskaplig argumentation mer övertygande.
 - D. Att riktig vetenskap alltid har essäistiska inslag.
 `,
+            },
+          ],
         },
       ],
       answer: "A",
@@ -2113,18 +2183,23 @@ Textförfattaren ifrågasätter något som hon anser vara en etablerad men före
       messages: [
         {
           role: "user",
-          content: readingAbilityText5,
-        },
-        {
-          role: "user",
-          content: `
-Om vi följer textens resonemang, vilket är då det mest rimliga sättet att förstå den "virtuella akademikerns" meningar?
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText5,
+            },
+            {
+              type: "text",
+              text: `
+**Om vi följer textens resonemang, vilket är då det mest rimliga sättet att förstå den "virtuella akademikerns" meningar?**
 
 - A. Som humoristiska men avskräckande exempel.
 - B. Som dräpande men ofarliga normbrott.
 - C. Som lättsamma försök att presentera nya idéer.
 - D. Som underhållande bevis på språkets oändliga mångfald.
 `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -2137,18 +2212,23 @@ Om vi följer textens resonemang, vilket är då det mest rimliga sättet att f�
       messages: [
         {
           role: "user",
-          content: readingAbilityText5,
-        },
-        {
-          role: "user",
-          content: `
-Vilken kvalitet hos essän vill textförfattaren framför allt betona med exemplet ur Virginia Nicholsons bok Singled out?
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText5,
+            },
+            {
+              type: "text",
+              text: `
+**Vilken kvalitet hos essän vill textförfattaren framför allt betona med exemplet ur Virginia Nicholsons bok Singled out?**
 
 - A. Essäns tidlösa karaktär.
 - B. Essäns förmåga till konkretion.
 - C. Essäns självreflekterande karaktär.
 - D. Essäns förmåga till övertalning.
 `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -2162,17 +2242,22 @@ Vilken kvalitet hos essän vill textförfattaren framför allt betona med exempl
       messages: [
         {
           role: "user",
-          content: readingAbilityText6,
-        },
-        {
-          role: "user",
-          content: `
-Vilken roll spelade teatern för etableringen av de nya yrkena, enligt texten?
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText6,
+            },
+            {
+              type: "text",
+              text: `
+**Vilken roll spelade teatern för etableringen av de nya yrkena, enligt texten?**
 - A. Teaterverksamheten skapade behov som tillgodosågs genom de nya yrkena.
 - B. Det var på teaterscenerna som de nya yrkena först framträdde för allmänheten.
 - C. Teatern och de nya yrkena förenades i kampen mot de etablerade skråna.
 - D. Det var tack vare teaterns popularitet som de nya yrkena till slut accepterades.
 `,
+            },
+          ],
         },
       ],
       answer: "A",
@@ -2185,17 +2270,22 @@ Vilken roll spelade teatern för etableringen av de nya yrkena, enligt texten?
       messages: [
         {
           role: "user",
-          content: readingAbilityText6,
-        },
-        {
-          role: "user",
-          content: `
-Vad var enligt texten en anledning till att skådespelaryrket och de nya yrkena ifrågasattes?
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText6,
+            },
+            {
+              type: "text",
+              text: `
+**Vad var enligt texten en anledning till att skådespelaryrket och de nya yrkena ifrågasattes?**
 - A. Allt lustfyllt ansågs strida mot det protestantiska idealet.
 - B. Den rådande tidsandan såg ner på det konstlade och tillgjorda.
 - C. Männen befarade att deras yrken skulle övertas av de framgångsrika kvinnorna.
 - D. Det ansågs fel att synliggöra det kvinnliga, såväl på som utanför teatern.
 `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -2208,17 +2298,22 @@ Vad var enligt texten en anledning till att skådespelaryrket och de nya yrkena 
       messages: [
         {
           role: "user",
-          content: readingAbilityText6,
-        },
-        {
-          role: "user",
-          content: `
-Vad var enligt texten utmärkande för den elisabetanska teaterns professionaliseringsarbete?
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText6,
+            },
+            {
+              type: "text",
+              text: `
+**Vad var enligt texten utmärkande för den elisabetanska teaterns professionaliseringsarbete?**
 - A. Behovet att uppfattas som modern.
 - B. Smutskastningen av traditionella försörjningssätt.
 - C. Betoningen av de egna styrkorna för att säkra framgång.
 - D. Markerandet av skillnader mellan sig själv och andra.
 `,
+            },
+          ],
         },
       ],
       answer: "D",
@@ -2231,16 +2326,22 @@ Vad var enligt texten utmärkande för den elisabetanska teaterns professionalis
       messages: [
         {
           role: "user",
-          content: readingAbilityText6,
-        },
-        {
-          role: "user",
-          content: `
-Vad framstår som en viktig poäng i Natasha Kordas bok?
+          content: [
+            {
+              type: "text",
+              text: readingAbilityText6,
+            },
+            {
+              type: "text",
+              text: `
+**Vad framstår som en viktig poäng i Natasha Kordas bok?**
 - A. Att den elisabetanska teaterns kvinnor bedrev en tidig rättighetskamp.
 - B. Att den elisabetanska teaterscenen skildrade osedda kvinnors livsvillkor.
 - C. Att den elisabetanska teaterns nya yrken stärkte kvinnors ställning i samhället.
-- D. Att det elisabetanska teaterlivet byggde på osynliggjort kvinnoarbete.`,
+- D. Att det elisabetanska teaterlivet byggde på osynliggjort kvinnoarbete.
+`,
+            },
+          ],
         },
       ],
       answer: "D",
