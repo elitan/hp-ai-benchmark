@@ -38,10 +38,10 @@ Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
 
 const SYSTEM_PROMPT_MATH = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska Ditt mål är att alltid svara korrekt för att få alla rätt.
 
-Lös varje uppgift i två steg.
+Du kan också använda "calculate"-verktyget för att utvärdera matematiska uttryck.
 
-Steg 1: Resonera för att svara korrekt
-Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
+Lös varje uppgift genom att resonera dig fram till ditt svar. Avsluta med att ange ditt svarsalternativ.
+`;
 
 const readingAbilityText1 = `De blodkärlsinflammationer som kallas vaskuliter leder oftast till ett relativt milt sjukdomsförlopp, men de kan i vissa fall vara livshotande. Denna ovanliga grupp av autoimmuna sjukdomar brukar behandlas med kortison och olika typer av cellhämmande läkemedel, men kanske kan ny kunskap om vesiklar öppna nya möjligheter.
 - Genom att blockera vesiklarnas aktivitet har vi sett att inflammationsprocessen bromsas upp, säger Maria

@@ -5,11 +5,12 @@ import {
   generateObject,
   generateText,
   streamText,
+  tool,
 } from "ai";
 import { z } from "zod";
 import { Exam } from "../exams/2024-spring";
-import { ollama } from "ollama-ai-provider";
 import { openai } from "@ai-sdk/openai";
+import * as mathjs from "mathjs";
 
 export interface Message {
   role: "user" | "assistant";
@@ -83,7 +84,7 @@ export async function solveTasks(props: SolveTasksProps) {
       text,
       answer,
       usage: { totalTokens },
-    } = await solveTaskStream({ system, messages, model });
+    } = await solveTask({ system, messages, model });
 
     // console.log("");
     // console.log("");
@@ -132,12 +133,31 @@ export async function solveTask(props: SolveTaskProps) {
     model: model.model,
     system,
     messages,
+    tools: {
+      calculate: tool({
+        description: `Ett verktyg för att utvärdera matematiska uttryck. Exempeluttryck: '2 + 2', '3 * 4', '5 / 2', 'sqrt(9)'`,
+        parameters: z.object({
+          expression: z.string(),
+        }),
+        execute: async ({ expression }) => {
+          console.log("--- evaluating expression::: ", expression);
+          const res = mathjs.evaluate(expression);
+          console.log(res);
+          return res;
+        },
+      }),
+    },
+    toolChoice: "auto",
+    maxToolRoundtrips: 10,
   });
 
+  console.log(text);
+
   const { object, ...rest2 } = await generateObject({
-    model: ollama("llama3:70b"),
+    // model: ollama("llama3:70b"),
+    model: openai("gpt-3.5-turbo"),
     schema: z.object({
-      answer: z.enum(["A", "B", "C", "D", "E"]),
+      answer: z.enum(["A", "B", "C", "D", "E", "no-answer-found"]),
     }),
     prompt: `LÖSNING: ${text}\n\nFRÅGA:\nVilket svar (A, B, C, D, eller E) är angivet?`,
   });
@@ -159,6 +179,7 @@ export async function solveTaskStream(props: SolveTaskProps) {
     messages,
     temperature: 0.7,
   });
+
   let completeText = "";
 
   for await (const textPart of result.textStream) {

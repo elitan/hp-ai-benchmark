@@ -7,7 +7,7 @@ async function main() {
   const tasks = getExam2024Spring();
 
   const model = {
-    model: anthropic("claude-3-opus-20240229"),
+    model: anthropic("claude-3-5-sonnet-20240620"),
     vision: true,
     type: {
       verbal: true,

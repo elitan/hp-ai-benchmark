@@ -8,6 +8,7 @@ This repository contains a benchmark for AI models on the Swedish university adm
 
 | Model                          | Verbal | Verbal Points | Math | Math Points | Total |
 | ------------------------------ | :----: | :-----------: | :--: | :---------: | :---: |
+| claude-3-5-sonnet-20240620     | 58/60  |      2.0      |  -   |      -      |   -   |
 | gpt-4o                         | 58/60  |      2.0      |  -   |      -      |   -   |
 | claude-3-opus-20240229         | 58/60  |      2.0      |  -   |      -      |   -   |
 | gpt-turbo                      | 57/60  |      1.9      |  -   |      -      |   -   |
