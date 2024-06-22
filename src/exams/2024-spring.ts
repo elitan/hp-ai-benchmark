@@ -3168,11 +3168,9 @@ Tillräcklig information för lösningen erhålls
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 Studera kategorin Fritidsresor utrikes. Vilket år var dess andel av det totala antalet resor som störst?
 
 - A. 2011
@@ -3180,6 +3178,8 @@ Studera kategorin Fritidsresor utrikes. Vilket år var dess andel av det totala 
 - C. 2014
 - D. 2016
       `,
+            },
+          ],
         },
       ],
       answer: "D",
@@ -3199,11 +3199,9 @@ Studera kategorin Fritidsresor utrikes. Vilket år var dess andel av det totala 
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 Från 2012 till 2013 minskade det totala antalet resor. Vilken var den enda kategori där antalet ökade mellan dessa år?
 
 - A. Affärsresor utrikes
@@ -3211,6 +3209,8 @@ Från 2012 till 2013 minskade det totala antalet resor. Vilken var den enda kate
 - C. Affärsresor inrikes
 - D. Fritidsresor inrikes
       `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -3230,11 +3230,9 @@ Från 2012 till 2013 minskade det totala antalet resor. Vilken var den enda kate
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 Hur fördelade sig antalet resor procentuellt på utrikesresor respektive inrikesresor 2016?
 
 Utrikes    Inrikes
@@ -3243,6 +3241,8 @@ Utrikes    Inrikes
 - C. 35 %    65 %
 - D. 45 %    55 %
       `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -3263,11 +3263,9 @@ Utrikes    Inrikes
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 Vilka två dödsorsaker angavs för sammanlagt en femtedel av de kungsörnar som inkom till Naturhistoriska riksmuseet 1993–2011?
 
 - A. Illegal jakt och El
@@ -3275,6 +3273,8 @@ Vilka två dödsorsaker angavs för sammanlagt en femtedel av de kungsörnar som
 - C. El och Vindkraftverk
 - D. Vindkraftverk och Annan olycka
       `,
+            },
+          ],
         },
       ],
       answer: "A",
@@ -3294,11 +3294,9 @@ Vilka två dödsorsaker angavs för sammanlagt en femtedel av de kungsörnar som
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 Vilket var förhållandet mellan antalet kungsörnar med okänd dödsorsak och antalet kungsörnar med känd dödsorsak bland örnarna som påträffades i månaden juni?
 
 - A. 1:2
@@ -3306,6 +3304,8 @@ Vilket var förhållandet mellan antalet kungsörnar med okänd dödsorsak och a
 - C. 5:8
 - D. 8:5
       `,
+            },
+          ],
         },
       ],
       answer: "D",
@@ -3325,11 +3325,9 @@ Vilket var förhållandet mellan antalet kungsörnar med okänd dödsorsak och a
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 För hur stor andel av de kungsörnar som inkom till Naturhistoriska riksmuseet 1993–2011 angavs fyndmånad?
 
 - A. 72 procent
@@ -3337,6 +3335,8 @@ För hur stor andel av de kungsörnar som inkom till Naturhistoriska riksmuseet 
 - C. 78 procent
 - D. 82 procent
       `,
+            },
+          ],
         },
       ],
       answer: "D",
@@ -3356,11 +3356,9 @@ För hur stor andel av de kungsörnar som inkom till Naturhistoriska riksmuseet 
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 Hur stor andel av de som arbetade inom jordbruk, skogsbruk, jakt och fiske i Gävleborgs län 2015 fanns inom jordbruket?
 
 - A. 30 procent
@@ -3368,6 +3366,8 @@ Hur stor andel av de som arbetade inom jordbruk, skogsbruk, jakt och fiske i Gä
 - C. 40 procent
 - D. 45 procent
       `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -3387,11 +3387,9 @@ Hur stor andel av de som arbetade inom jordbruk, skogsbruk, jakt och fiske i Gä
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 Identifiera det län som hade störst andel förvärvsarbetande inom jordbruk, skogsbruk, jakt och fiske av det totala antalet förvärvsarbetande i länet. Hur många förvärvsarbetande fanns det totalt i detta län 2015?
 
 - A. 11 000
@@ -3399,6 +3397,8 @@ Identifiera det län som hade störst andel förvärvsarbetande inom jordbruk, s
 - C. 43 000
 - D. 62 000
       `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -3418,11 +3418,9 @@ Identifiera det län som hade störst andel förvärvsarbetande inom jordbruk, s
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 För vilket av följande län gällde år 2015 att var femte person som arbetade inom jordbruk, skogsbruk, jakt och fiske var kvinna?
 
 - A. Stockholms län
@@ -3430,6 +3428,8 @@ För vilket av följande län gällde år 2015 att var femte person som arbetade
 - C. Kalmar län
 - D. Skåne län
       `,
+            },
+          ],
         },
       ],
       answer: "C",
@@ -3455,11 +3455,9 @@ För vilket av följande län gällde år 2015 att var femte person som arbetade
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 Vilken av följande gårdar stämmer med beskrivningen?
 
 Byggningen eller stugan låg norr om gårdsplanen. Söder om gårdsplanen fanns stall och stallslider.
@@ -3469,6 +3467,8 @@ Byggningen eller stugan låg norr om gårdsplanen. Söder om gårdsplanen fanns 
 - C. Ryssgård
 - D. Östra Flintgård
       `,
+            },
+          ],
         },
       ],
       answer: "A",
@@ -3494,11 +3494,9 @@ Byggningen eller stugan låg norr om gårdsplanen. Söder om gårdsplanen fanns 
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 Identifiera det torvhus, torkställning för torv som låg mellan den nordöstra Stamgården och Ryssgård, intill en stuga. Vad fanns 40 meter rakt söder om detta torvhus?
 
 - A. Hemlighus och dyngskåle
@@ -3506,6 +3504,8 @@ Identifiera det torvhus, torkställning för torv som låg mellan den nordöstra
 - C. Köksväxter
 - D. Vedlider och slipskåle
       `,
+            },
+          ],
         },
       ],
       answer: "B",
@@ -3531,11 +3531,9 @@ Identifiera det torvhus, torkställning för torv som låg mellan den nordöstra
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png"
               ),
             },
-          ],
-        },
-        {
-          role: "user",
-          content: `
+            {
+              type: "text",
+              text: `
 Fähuset i Måsgård, fähuset i Ammagård samt det sydligast belägna fähuset i Jerkgård utgör hörnen i ett triangelformat område. Hur stort är detta område?
 
 - A. 4 500 m²
@@ -3543,6 +3541,8 @@ Fähuset i Måsgård, fähuset i Ammagård samt det sydligast belägna fähuset 
 - C. 10 500 m²
 - D. 13 000 m²
       `,
+            },
+          ],
         },
       ],
       answer: "B",

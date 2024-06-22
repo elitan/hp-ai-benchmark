@@ -141,8 +141,13 @@ export async function solveTask(props: SolveTaskProps) {
         }),
         execute: async ({ expression }) => {
           console.log("--- evaluating expression::: ", expression);
-          const res = mathjs.evaluate(expression);
-          console.log(res);
+          let res;
+          try {
+            res = mathjs.evaluate(expression);
+          } catch (e) {
+            console.log(e);
+            res = "error. please check the expression and try again.";
+          }
           return res;
         },
       }),
