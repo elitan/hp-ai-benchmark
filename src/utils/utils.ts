@@ -109,6 +109,8 @@ export async function solveTasks(props: SolveTasksProps) {
 
     tokensUsed += totalTokens;
     question++;
+
+    await new Promise((resolve) => setTimeout(resolve, 20000));
   }
 
   return {
