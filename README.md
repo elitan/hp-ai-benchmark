@@ -10,8 +10,8 @@ This repository contains a benchmark for AI models on the Swedish university adm
 | ------------------------------ | :----: | :-----------: | :---: | :---------: | :---: |
 | claude-3-5-sonnet-20240620     | 58/60  |      2.0      | 59/80 |     1.4     |  1.7  |
 | gpt-4o                         | 58/60  |      2.0      | 59/80 |     1.4     |  1.7  |
+| gpt-turbo                      | 57/60  |      1.9      | 47/80 |     1.1     |  1.5  |
 | claude-3-opus-20240229         | 58/60  |      2.0      | 39/80 |     0.8     |  1.4  |
-| gpt-turbo                      | 57/60  |      1.9      |   -   |      -      |   -   |
 | models/gemini-pro-vision       | 56/60  |      1.9      |   -   |      -      |   -   |
 | claude-3-sonnet-20240229       | 55/60  |      1.8      |   -   |      -      |   -   |
 | models/gemini-1.5-flash-latest | 54/60  |      1.7      |   -   |      -      |   -   |
