@@ -7,7 +7,7 @@ async function main() {
   const tasks = getExam2024Spring();
 
   const model = {
-    model: openai("gpt-4-turbo"),
+    model: openai("gpt-4o-mini"),
     vision: true,
     type: {
       verbal: false,

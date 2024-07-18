@@ -11,6 +11,7 @@ import { z } from "zod";
 import { Exam } from "../exams/2024-spring";
 import { openai } from "@ai-sdk/openai";
 import * as mathjs from "mathjs";
+import { anthropic } from "@ai-sdk/anthropic";
 
 export interface Message {
   role: "user" | "assistant";
@@ -161,8 +162,7 @@ export async function solveTask(props: SolveTaskProps) {
   console.log(text);
 
   const { object, ...rest2 } = await generateObject({
-    // model: ollama("llama3:70b"),
-    model: openai("gpt-3.5-turbo"),
+    model: anthropic("claude-3-haiku-20240307"),
     schema: z.object({
       answer: z.enum(["A", "B", "C", "D", "E", "no-answer-found"]),
     }),
