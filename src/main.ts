@@ -1,13 +1,13 @@
-import "dotenv/config";
 import { getExam2024Spring } from "./exams/2024-spring";
 import { solveTasks } from "./utils/utils";
-import { openai } from "@ai-sdk/openai";
+import { anthropic } from "@ai-sdk/anthropic";
+import "dotenv/config";
 
 async function main() {
   const tasks = getExam2024Spring();
 
   const model = {
-    model: openai("gpt-4o-mini"),
+    model: anthropic("claude-3-5-sonnet-20241022"),
     vision: true,
     type: {
       verbal: false,
