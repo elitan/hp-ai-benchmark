@@ -23,6 +23,7 @@ interface SolveTasksProps {
   model: {
     model: LanguageModel | any;
     vision: boolean;
+    skipSystemPrompt: boolean;
     type: {
       verbal: boolean;
       math: boolean;
@@ -87,6 +88,12 @@ export async function solveTasks(props: SolveTasksProps) {
       usage: { totalTokens },
     } = await solveTask({ system, messages, model });
 
+    for (let i = 20; i > 0; i--) {
+      process.stdout.write(`\r--- waiting ${i} seconds`);
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+    }
+    process.stdout.write("\r" + " ".repeat(30) + "\r"); // Clear the line
+
     // console.log("");
     // console.log("");
     // console.log(text);
@@ -126,6 +133,7 @@ interface SolveTaskProps {
   model: {
     model: LanguageModel;
     vision: boolean;
+    skipSystemPrompt: boolean;
   };
 }
 
@@ -134,7 +142,7 @@ export async function solveTask(props: SolveTaskProps) {
 
   const { text, ...rest } = await generateText({
     model: model.model,
-    system,
+    system: model.skipSystemPrompt ? undefined : system,
     messages,
     tools: {
       calculate: tool({
@@ -155,24 +163,31 @@ export async function solveTask(props: SolveTaskProps) {
         },
       }),
     },
+    maxTokens: 2000,
     toolChoice: "auto",
-    maxToolRoundtrips: 10,
+    maxSteps: 10,
   });
 
   console.log(text);
 
-  const { object, ...rest2 } = await generateObject({
-    model: anthropic("claude-3-haiku-20240307"),
-    schema: z.object({
-      answer: z.enum(["A", "B", "C", "D", "E", "no-answer-found"]),
-    }),
-    prompt: `LÖSNING: ${text}\n\nFRÅGA:\nVilket svar (A, B, C, D, eller E) är angivet?`,
-  });
+  let answer = "no-answer-found";
+  try {
+    const { object, ...rest2 } = await generateObject({
+      model: anthropic("claude-3-haiku-20240307"),
+      schema: z.object({
+        answer: z.enum(["A", "B", "C", "D", "E", "no-answer-found"]),
+      }),
+      prompt: `LÖSNING: ${text}\n\nFRÅGA:\nVilket svar (A, B, C, D, eller E) är angivet?`,
+    });
+    answer = object.answer;
+  } catch (e) {
+    console.log(e);
+  }
 
   return {
     skip: false,
     text,
-    answer: object.answer,
+    answer,
     ...rest,
   };
 }

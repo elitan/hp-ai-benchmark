@@ -1,14 +1,15 @@
+import { google } from "@ai-sdk/google";
 import { getExam2024Spring } from "./exams/2024-spring";
 import { solveTasks } from "./utils/utils";
-import { anthropic } from "@ai-sdk/anthropic";
 import "dotenv/config";
 
 async function main() {
   const tasks = getExam2024Spring();
 
   const model = {
-    model: anthropic("claude-3-5-haiku-20241022"),
+    model: google("gemini-2.0-flash-exp"),
     vision: true,
+    skipSystemPrompt: false,
     type: {
       verbal: false,
       math: true,

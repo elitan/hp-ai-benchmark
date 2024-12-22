@@ -928,6 +928,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/1.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -947,6 +951,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/2.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -968,6 +976,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/3.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -987,6 +999,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/4.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1008,6 +1024,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/5.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1027,6 +1047,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/6.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1048,6 +1072,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/7.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1067,6 +1095,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/8.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1088,6 +1120,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/9.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1107,6 +1143,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/10.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1128,6 +1168,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/11.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1147,6 +1191,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/12.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1168,6 +1216,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/13.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1187,6 +1239,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/14.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1208,6 +1264,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/15.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1227,6 +1287,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/16.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1248,6 +1312,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/17.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1267,6 +1335,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/18.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1288,6 +1360,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/19.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1307,6 +1383,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/20.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1328,6 +1408,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/21.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1347,6 +1431,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/22.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1368,6 +1456,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/23.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1387,6 +1479,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/24.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1408,6 +1504,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/25.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1427,6 +1527,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/26.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -1448,6 +1552,10 @@ export function getExam2024Spring() {
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/27.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -1467,6 +1575,10 @@ export function getExam2024Spring() {
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/28.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -2578,6 +2690,10 @@ Vad är x?
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/2.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -2597,6 +2713,10 @@ Vad är x?
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/3.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -2662,6 +2782,10 @@ för att mötas längs vägen. Julia springer med konstant hastighet och det tar
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/6.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -2682,6 +2806,10 @@ för att mötas längs vägen. Julia springer med konstant hastighet och det tar
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/7.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -2701,6 +2829,10 @@ för att mötas längs vägen. Julia springer med konstant hastighet och det tar
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/8.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -2742,6 +2874,10 @@ Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/10.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -2762,6 +2898,10 @@ Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/11.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -2781,6 +2921,10 @@ Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/12.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -2825,6 +2969,10 @@ Kvantitet II: y
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/14.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -2844,6 +2992,10 @@ Kvantitet II: y
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/15.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -2915,6 +3067,10 @@ Kvantitet II:  25
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/18.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -2935,6 +3091,10 @@ Kvantitet II:  25
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/19.png"
               ),
             },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
+            },
           ],
         },
       ],
@@ -2954,6 +3114,10 @@ Kvantitet II:  25
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/20.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -3048,6 +3212,10 @@ Tillräcklig information för lösningen erhålls
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/24.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
@@ -3146,6 +3314,10 @@ Tillräcklig information för lösningen erhålls
               image: new URL(
                 "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/28.png"
               ),
+            },
+            {
+              type: "text",
+              text: "Lös denna uppgiften.",
             },
           ],
         },
