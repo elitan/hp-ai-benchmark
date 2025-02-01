@@ -88,11 +88,11 @@ export async function solveTasks(props: SolveTasksProps) {
       usage: { totalTokens },
     } = await solveTask({ system, messages, model });
 
-    for (let i = 20; i > 0; i--) {
-      process.stdout.write(`\r--- waiting ${i} seconds`);
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-    }
-    process.stdout.write("\r" + " ".repeat(30) + "\r"); // Clear the line
+    // for (let i = 20; i > 0; i--) {
+    //   process.stdout.write(`\r--- waiting ${i} seconds`);
+    //   await new Promise((resolve) => setTimeout(resolve, 1000));
+    // }
+    // process.stdout.write("\r" + " ".repeat(30) + "\r"); // Clear the line
 
     // console.log("");
     // console.log("");

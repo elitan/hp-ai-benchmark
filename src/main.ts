@@ -1,13 +1,13 @@
-import { google } from "@ai-sdk/google";
 import { getExam2024Spring } from "./exams/2024-spring";
 import { solveTasks } from "./utils/utils";
 import "dotenv/config";
+import { openai } from "@ai-sdk/openai";
 
 async function main() {
   const tasks = getExam2024Spring();
 
   const model = {
-    model: google("gemini-2.0-flash-exp"),
+    model: openai("o3-mini"),
     vision: true,
     skipSystemPrompt: false,
     type: {

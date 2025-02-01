@@ -12,9 +12,9 @@
   "dependencies": {
     "@ai-sdk/anthropic": "^1.0.5",
     "@ai-sdk/google": "^1.0.12",
-    "@ai-sdk/openai": "^1.0.11",
+    "@ai-sdk/openai": "^1.1.8",
     "@types/node": "^20.12.12",
-    "ai": "^4.0.18",
+    "ai": "^4.1.16",
     "dotenv": "^16.4.5",
     "mathjs": "^13.0.0",
     "ollama-ai-provider": "^0.7.0",
