@@ -19,20 +19,48 @@ export interface Message {
 }
 
 interface SolveTasksProps {
+  /**
+   * Array of exam tasks to be solved
+   */
   tasks: Exam[];
+  /**
+   * Model configuration
+   */
   model: {
+    /**
+     * The language model to use (can be any AI SDK model)
+     */
     model: LanguageModel | any;
+    /**
+     * Whether the model supports vision/image processing
+     */
     vision: boolean;
+    /**
+     * Whether to skip the system prompt
+     */
     skipSystemPrompt: boolean;
+    /**
+     * Types of tasks the model should solve
+     */
     type: {
+      /**
+       * Whether to solve verbal reasoning tasks
+       */
       verbal: boolean;
+      /**
+       * Whether to solve mathematical tasks
+       */
       math: boolean;
     };
   };
+  /**
+   * Optional delay in milliseconds between processing tasks
+   */
+  delayBetweenTasks?: number;
 }
 
 export async function solveTasks(props: SolveTasksProps) {
-  const { model, tasks } = props;
+  const { model, tasks, delayBetweenTasks = 10000 } = props;
 
   let question = 1;
   let answers = {
@@ -118,7 +146,13 @@ export async function solveTasks(props: SolveTasksProps) {
     tokensUsed += totalTokens;
     question++;
 
-    // await new Promise((resolve) => setTimeout(resolve, 20000));
+    // Add delay between tasks (except after the last task)
+    if (question <= tasks.length && delayBetweenTasks > 0) {
+      console.log(
+        `Waiting ${delayBetweenTasks / 1000} seconds before next task...`
+      );
+      await new Promise((resolve) => setTimeout(resolve, delayBetweenTasks));
+    }
   }
 
   return {
