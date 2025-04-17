@@ -2,16 +2,17 @@ import { getExam2024Spring } from "./exams/2024-spring";
 import { solveTasks } from "./utils/utils";
 import "dotenv/config";
 import { google } from "@ai-sdk/google";
+import { openai } from "@ai-sdk/openai";
 
 async function main() {
   const tasks = getExam2024Spring();
 
   const model = {
-    model: google("gemini-2.5-pro-exp-03-25"),
+    model: openai("gpt-4.1-nano"),
     vision: true,
     skipSystemPrompt: false,
     type: {
-      verbal: false,
+      verbal: true,
       math: true,
     },
   };
@@ -19,7 +20,7 @@ async function main() {
   const { answers, tokensUsed } = await solveTasks({
     tasks,
     model,
-    delayBetweenTasks: 10000,
+    delayBetweenTasks: 0,
   });
 
   console.log("");

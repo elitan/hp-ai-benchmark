@@ -100,12 +100,16 @@ export async function solveTasks(props: SolveTasksProps) {
       }
     }
 
-    if (model.type.verbal && !task.type.includes("verbal")) {
+    // Skip task if only one type is selected and it doesn't match
+    const onlyVerbal = model.type.verbal && !model.type.math;
+    const onlyMath = model.type.math && !model.type.verbal;
+
+    if (onlyVerbal && !task.type.includes("verbal")) {
       console.log(`Skipping task because it's a math task`);
       continue;
     }
 
-    if (model.type.math && !task.type.includes("math")) {
+    if (onlyMath && !task.type.includes("math")) {
       console.log(`Skipping task because it's a verbal task`);
       continue;
     }
