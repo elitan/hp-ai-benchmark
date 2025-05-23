@@ -13,13 +13,14 @@ This repository contains a benchmark for AI models on the Swedish university adm
 | claude-3-5-sonnet-20241022 | 58/60  |      2.0      | 61/80 |     1.3     | 1.65  |
 | claude-3-5-sonnet-20240620 | 58/60  |      2.0      | 59/80 |     1.3     | 1.65  |
 | gpt-4o                     | 58/60  |      2.0      | 59/80 |     1.3     | 1.65  |
+| claude-4-sonnet-20250514   | 57/60  |      1.9      | 60/80 |     1.3     | 1.65  |
 | gemini-2.0-flash-exp       | 57/60  |      1.9      | 61/80 |     1.3     |  1.6  |
 | gpt-turbo                  | 57/60  |      1.9      | 47/80 |     1.0     | 1.45  |
-| gpt-4o-mini                | 55/60  |      1.8      | 46/80 |     1.0     |  1.4  |
 | claude-3-opus-20240229     | 58/60  |      2.0      | 39/80 |     0.8     |  1.4  |
+| gpt-4o-mini                | 55/60  |      1.8      | 46/80 |     1.0     |  1.4  |
+| o3-mini                    | 55/60  |      1.8      | x/80  |     xx      |   x   |
 | gpt-4.1-nano               | 48/60  |      1.0      | 41/80 |     0.8     |  0.9  |
 | claude-3-5-haiku-20241022  | 58/60  |      2.0      |   -   |      -      |   -   |
-| o3-mini                    | 55/60  |      1.8      | x/80  |     xx      |   x   |
 | gemini-pro-vision          | 56/60  |      1.9      |   -   |      -      |   -   |
 | claude-3-sonnet-20240229   | 55/60  |      1.8      |   -   |      -      |   -   |
 | gemini-1.5-flash-latest    | 54/60  |      1.7      |   -   |      -      |   -   |
