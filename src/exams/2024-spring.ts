@@ -36,12 +36,13 @@ Lös varje uppgift i två steg.
 Steg 1: Resonera för att svara korrekt
 Steg 2: Skriv ditt svar inklusive svarsalternativ.`;
 
-const SYSTEM_PROMPT_MATH = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska Ditt mål är att alltid svara korrekt för att få alla rätt.
+const SYSTEM_PROMPT_MATH = `Du är en smart elev som skriver högskoleprovet. Du resonerar och svarar på svenska. Ditt mål är att alltid svara korrekt.
 
-Du kan också använda "calculate"-verktyget för att utvärdera matematiska uttryck.
+VIKTIGT: Använd ALLTID "calculate"-verktyget för alla beräkningar. Räkna aldrig i huvudet.
 
-Lös varje uppgift genom att resonera dig fram till ditt svar. Avsluta med att ange ditt svarsalternativ.
-`;
+Steg 1: Analysera problemet
+Steg 2: Använd calculate-verktyget för varje beräkning
+Steg 3: Ange ditt svarsalternativ baserat på resultatet`;
 
 const readingAbilityText1 = `De blodkärlsinflammationer som kallas vaskuliter leder oftast till ett relativt milt sjukdomsförlopp, men de kan i vissa fall vara livshotande. Denna ovanliga grupp av autoimmuna sjukdomar brukar behandlas med kortison och olika typer av cellhämmande läkemedel, men kanske kan ny kunskap om vesiklar öppna nya möjligheter.
 - Genom att blockera vesiklarnas aktivitet har vi sett att inflammationsprocessen bromsas upp, säger Maria
@@ -925,7 +926,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/1.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/1.png",
               ),
             },
             {
@@ -949,7 +950,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/2.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/2.png",
               ),
             },
             {
@@ -973,7 +974,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/3.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/3.png",
               ),
             },
             {
@@ -997,7 +998,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/4.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/4.png",
               ),
             },
             {
@@ -1021,7 +1022,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/5.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/5.png",
               ),
             },
             {
@@ -1045,7 +1046,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/6.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/6.png",
               ),
             },
             {
@@ -1069,7 +1070,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/7.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/7.png",
               ),
             },
             {
@@ -1093,7 +1094,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/8.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/8.png",
               ),
             },
             {
@@ -1117,7 +1118,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/9.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/9.png",
               ),
             },
             {
@@ -1141,7 +1142,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/10.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/10.png",
               ),
             },
             {
@@ -1165,7 +1166,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/11.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/11.png",
               ),
             },
             {
@@ -1189,7 +1190,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/12.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/12.png",
               ),
             },
             {
@@ -1213,7 +1214,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/13.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/13.png",
               ),
             },
             {
@@ -1237,7 +1238,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/14.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/14.png",
               ),
             },
             {
@@ -1261,7 +1262,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/15.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/15.png",
               ),
             },
             {
@@ -1285,7 +1286,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/16.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/16.png",
               ),
             },
             {
@@ -1309,7 +1310,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/17.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/17.png",
               ),
             },
             {
@@ -1333,7 +1334,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/18.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/18.png",
               ),
             },
             {
@@ -1357,7 +1358,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/19.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/19.png",
               ),
             },
             {
@@ -1381,7 +1382,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/20.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/20.png",
               ),
             },
             {
@@ -1405,7 +1406,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/21.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/21.png",
               ),
             },
             {
@@ -1429,7 +1430,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/22.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/22.png",
               ),
             },
             {
@@ -1453,7 +1454,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/23.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/23.png",
               ),
             },
             {
@@ -1477,7 +1478,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/24.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/24.png",
               ),
             },
             {
@@ -1501,7 +1502,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/25.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/25.png",
               ),
             },
             {
@@ -1525,7 +1526,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/26.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/26.png",
               ),
             },
             {
@@ -1549,7 +1550,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/27.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/27.png",
               ),
             },
             {
@@ -1573,7 +1574,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/28.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/28.png",
               ),
             },
             {
@@ -1597,7 +1598,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png",
               ),
             },
             {
@@ -1627,7 +1628,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png",
               ),
             },
             {
@@ -1657,7 +1658,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/29-31.png",
               ),
             },
             {
@@ -1688,7 +1689,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png",
               ),
             },
             {
@@ -1719,7 +1720,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png",
               ),
             },
             {
@@ -1750,7 +1751,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/32-34.png",
               ),
             },
             {
@@ -1781,7 +1782,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png",
               ),
             },
             {
@@ -1812,7 +1813,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png",
               ),
             },
             {
@@ -1843,7 +1844,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/35-37.png",
               ),
             },
             {
@@ -1875,7 +1876,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png",
               ),
             },
             {
@@ -1906,7 +1907,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png",
               ),
             },
             {
@@ -1937,7 +1938,7 @@ export function getExam2024Spring() {
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/2-kvant/38-40.png",
               ),
             },
             {
@@ -2687,7 +2688,7 @@ Vad är x?
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/2.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/2.png",
               ),
             },
             {
@@ -2711,7 +2712,7 @@ Vad är x?
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/3.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/3.png",
               ),
             },
             {
@@ -2779,7 +2780,7 @@ för att mötas längs vägen. Julia springer med konstant hastighet och det tar
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/6.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/6.png",
               ),
             },
             {
@@ -2803,7 +2804,7 @@ för att mötas längs vägen. Julia springer med konstant hastighet och det tar
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/7.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/7.png",
               ),
             },
             {
@@ -2827,7 +2828,7 @@ för att mötas längs vägen. Julia springer med konstant hastighet och det tar
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/8.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/8.png",
               ),
             },
             {
@@ -2871,7 +2872,7 @@ Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/10.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/10.png",
               ),
             },
             {
@@ -2895,7 +2896,7 @@ Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/11.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/11.png",
               ),
             },
             {
@@ -2919,7 +2920,7 @@ Vilket svarsalternativ är en ekvation för en linje som går genom punkten (3, 
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/12.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/12.png",
               ),
             },
             {
@@ -2966,7 +2967,7 @@ Kvantitet II: y
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/14.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/14.png",
               ),
             },
             {
@@ -2990,7 +2991,7 @@ Kvantitet II: y
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/15.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/15.png",
               ),
             },
             {
@@ -3064,7 +3065,7 @@ Kvantitet II:  25
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/18.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/18.png",
               ),
             },
             {
@@ -3088,7 +3089,7 @@ Kvantitet II:  25
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/19.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/19.png",
               ),
             },
             {
@@ -3112,7 +3113,7 @@ Kvantitet II:  25
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/20.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/20.png",
               ),
             },
             {
@@ -3210,7 +3211,7 @@ Tillräcklig information för lösningen erhålls
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/24.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/24.png",
               ),
             },
             {
@@ -3312,7 +3313,7 @@ Tillräcklig information för lösningen erhålls
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/28.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/28.png",
               ),
             },
             {
@@ -3337,7 +3338,7 @@ Tillräcklig information för lösningen erhålls
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png",
               ),
             },
             {
@@ -3368,7 +3369,7 @@ Studera kategorin Fritidsresor utrikes. Vilket år var dess andel av det totala 
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png",
               ),
             },
             {
@@ -3399,7 +3400,7 @@ Från 2012 till 2013 minskade det totala antalet resor. Vilken var den enda kate
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/29-31.png",
               ),
             },
             {
@@ -3432,7 +3433,7 @@ Utrikes    Inrikes
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png",
               ),
             },
             {
@@ -3463,7 +3464,7 @@ Vilka två dödsorsaker angavs för sammanlagt en femtedel av de kungsörnar som
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png",
               ),
             },
             {
@@ -3494,7 +3495,7 @@ Vilket var förhållandet mellan antalet kungsörnar med okänd dödsorsak och a
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/32-34.png",
               ),
             },
             {
@@ -3525,7 +3526,7 @@ För hur stor andel av de kungsörnar som inkom till Naturhistoriska riksmuseet 
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png",
               ),
             },
             {
@@ -3556,7 +3557,7 @@ Hur stor andel av de som arbetade inom jordbruk, skogsbruk, jakt och fiske i Gä
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png",
               ),
             },
             {
@@ -3587,7 +3588,7 @@ Identifiera det län som hade störst andel förvärvsarbetande inom jordbruk, s
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/35-37.png",
               ),
             },
             {
@@ -3618,13 +3619,13 @@ För vilket av följande län gällde år 2015 att var femte person som arbetade
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-1.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-1.png",
               ),
             },
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png",
               ),
             },
             {
@@ -3657,13 +3658,13 @@ Byggningen eller stugan låg norr om gårdsplanen. Söder om gårdsplanen fanns 
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-1.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-1.png",
               ),
             },
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png",
               ),
             },
             {
@@ -3694,13 +3695,13 @@ Identifiera det torvhus, torkställning för torv som låg mellan den nordöstra
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-1.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-1.png",
               ),
             },
             {
               type: "image",
               image: new URL(
-                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png"
+                "https://raw.githubusercontent.com/elitan/hp-ai-benchmark/main/assets/2024-spring/5-kvant/38-40-2.png",
               ),
             },
             {
