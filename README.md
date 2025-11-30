@@ -8,6 +8,7 @@ This repository contains a benchmark for AI models on the Swedish university adm
 
 | Model                      | Verbal | Verbal Points | Math  | Math Points | Total |
 | -------------------------- | :----: | :-----------: | :---: | :---------: | :---: |
+| gemini-3-pro-preview       | 58/60  |      2.0      | 79/80 |     2.0     |  2.0  |
 | gpt-4.1                    | 58/60  |      2.0      | 64/80 |     1.4     |  1.7  |
 | gpt-4.1-mini               | 58/60  |      2.0      | 64/80 |     1.4     |  1.7  |
 | claude-3-5-sonnet-20241022 | 58/60  |      2.0      | 61/80 |     1.3     | 1.65  |
