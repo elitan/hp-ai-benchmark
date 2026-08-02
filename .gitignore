@@ -1,4 +1,4 @@
 .env
+.hp-ai-benchmark-checkpoint.json
 node_modules
 .DS_Store
-

@@ -1,16 +1,44 @@
 import { getExam2024Spring } from "./exams/2024-spring";
-import { runExam, detectVision, ExamResult } from "./solver";
+import { requireOpenRouterConfiguration } from "./openrouter";
+import { runExam, detectToolUse, detectVision, ExamResult } from "./solver";
 import "dotenv/config";
 
-// ============================================
-// CONFIGURATION
-// ============================================
-const MODEL = "xai/grok-4-fast-reasoning";
-// ============================================
+function optionValue(name: string): string | undefined {
+  const index = process.argv.indexOf(name);
+  if (index === -1) return undefined;
+  const value = process.argv[index + 1];
+  if (!value || value.startsWith("--")) {
+    throw new Error(`${name} requires a value.`);
+  }
+  return value;
+}
 
-const LIMIT = process.argv.includes("--limit")
-  ? parseInt(process.argv[process.argv.indexOf("--limit") + 1] || "3")
-  : undefined;
+function usage(): string {
+  return [
+    "Usage: bun run start -- --model <provider/model> [--limit <count>] [--request-timeout-ms <ms>] [--max-retries <count>] [--checkpoint <path>] [--resume]",
+    "       OPENROUTER_MODEL=<provider/model> bun run start",
+  ].join("\n");
+}
+
+function integerOption(name: string, defaultValue: number): number {
+  const value = optionValue(name);
+  if (value === undefined) return defaultValue;
+
+  const parsed = Number(value);
+  if (!Number.isInteger(parsed) || parsed < 0) {
+    throw new Error(`${name} must be a non-negative integer.`);
+  }
+  return parsed;
+}
+
+const MODEL = optionValue("--model") ?? process.env.OPENROUTER_MODEL;
+
+const LIMIT = optionValue("--limit");
+const REQUEST_TIMEOUT_MS = integerOption("--request-timeout-ms", 90_000);
+const MAX_RETRIES = integerOption("--max-retries", 2);
+const CHECKPOINT_PATH =
+  optionValue("--checkpoint") ?? ".hp-ai-benchmark-checkpoint.json";
+const RESUME = process.argv.includes("--resume");
 
 function formatTime(ms: number): string {
   if (ms < 1000) return `${ms}ms`;
@@ -75,6 +103,12 @@ function printLeaderboard(results: ExamResult[]) {
 }
 
 async function main() {
+  const model = MODEL;
+  if (!model) {
+    throw new Error(`An OpenRouter model slug is required.\n${usage()}`);
+  }
+  requireOpenRouterConfiguration();
+
   console.log("\n" + "=".repeat(60));
   console.log("  HP-AI-BENCHMARK v1.0");
   console.log("  Swedish Hogskoleprovet (University Aptitude Test)");
@@ -82,29 +116,44 @@ async function main() {
 
   let tasks = getExam2024Spring();
 
-  if (LIMIT) {
-    console.log(`\n  MODE: test (${LIMIT} questions)`);
-    tasks = tasks.slice(0, LIMIT);
+  if (LIMIT !== undefined) {
+    const limit = Number(LIMIT);
+    if (!Number.isInteger(limit) || limit <= 0) {
+      throw new Error("--limit must be a positive integer.");
+    }
+    console.log(`\n  MODE: test (${limit} questions)`);
+    tasks = tasks.slice(0, limit);
   } else {
     console.log(`\n  MODE: full exam (${tasks.length} questions)`);
   }
 
-  console.log(`  MODEL: ${MODEL}`);
+  console.log(`  MODEL: ${model}`);
+  console.log(`  REQUEST TIMEOUT: ${REQUEST_TIMEOUT_MS}ms`);
+  console.log(`  MAX RETRIES: ${MAX_RETRIES}`);
+  console.log(`  CHECKPOINT: ${CHECKPOINT_PATH}${RESUME ? " (resume)" : ""}`);
 
   const results: ExamResult[] = [];
 
   console.log("\n" + "=".repeat(60));
-  console.log(`  MODEL: ${MODEL}`);
+  console.log(`  MODEL: ${model}`);
   console.log("=".repeat(60));
 
-  const vision = await detectVision(MODEL);
+  const requestSettings = {
+    requestTimeoutMs: REQUEST_TIMEOUT_MS,
+    maxRetries: MAX_RETRIES,
+  };
+  const vision = await detectVision(model, requestSettings);
+  await detectToolUse(model, requestSettings);
   console.log(`  CAPABILITIES: vision=${vision ? "yes" : "no"}`);
   console.log("");
 
   const result = await runExam({
     tasks,
-    model: MODEL,
+    model,
     vision,
+    ...requestSettings,
+    checkpointPath: CHECKPOINT_PATH,
+    resume: RESUME,
     delayBetweenTasks: 0,
   });
   results.push(result);
@@ -114,7 +163,7 @@ async function main() {
   const pct = totalMax > 0 ? Math.round((100 * total) / totalMax) : 0;
 
   console.log("\n" + "-".repeat(60));
-  console.log(`  COMPLETE: ${MODEL}`);
+  console.log(`  COMPLETE: ${model}`);
   console.log(`  SCORE: ${total}/${totalMax} (${pct}%)`);
   console.log(`  TIME: ${formatTime(result.timeMs)}`);
   console.log(

@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "bun src/main.ts",
+    "test": "bun test",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@openrouter/ai-sdk-provider": "^1.5.4",
     "@types/node": "^20.12.12",
     "ai": "^5.0.104",
     "dotenv": "^16.4.5",
